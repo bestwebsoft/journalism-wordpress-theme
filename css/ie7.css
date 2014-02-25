@@ -1,0 +1,135 @@
+/*
+**ie7
+*/
+
+#ie7 img {
+	width: inherit;
+}
+#ie7 .post dl {
+	padding-top: 0px;
+}
+#ie7 .post dl h4 {
+	padding: 0px;
+	margin: 0px;
+}
+#ie7 .journalism-leave-reply {
+	padding-top: 20px;
+	float: right;
+}
+#ie7 .journalism-search-wrap .journalism-form .journalism-search-field {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 180px;
+	height: 28px;
+	padding-top: 15px;
+	padding-left: 17px;
+	padding-right: 61px;
+	background: url( images/search.png ) no-repeat 209px 15px #5e6264;
+	border: none 0px;
+	border-radius: 45px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #181e21!important;
+	font-size: 1em;
+	letter-spacing: 0.098rem;
+	word-spacing: 0.09rem;
+}
+#ie7 .widget .journalism-search-wrap .journalism-form .journalism-search-field {
+	width: 145px;
+}
+#ie7 .journalism-top_menu {
+ 	z-index: 1000;
+ 	background-color: #181e21;
+	border-radius: 5px;
+	min-height: 58px;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 41px;
+ }
+#ie7 .header-menu {
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	padding: 0px;
+	z-index: 1000;
+}
+#ie7 .header-menu li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+	float: left;
+	z-index: 1000;
+}
+#ie7 .header-menu li a{
+	word-spacing: -1.5px;
+	text-transform: uppercase;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 0px;
+	color: #ffffff;
+	letter-spacing: 0.019em;
+	display: block;
+	padding: 1.7em 1.2em 1.7em 1.7em;
+	z-index: 1000;
+}
+#ie7 .header-menu a:hover {
+	color: #8c8f90;
+}
+#ie7 .header-menu li ul {
+	display: none;
+	min-width: 218px;
+	height: auto;
+	position: absolute;
+	top: 58px;
+	z-index: 1500;
+	background-color: #181e21;
+}
+#ie7 .header-menu li ul li {
+	width: 16.6em;
+	display: block;
+	float: none;
+	border-bottom: 1px dashed #273035;
+}
+#ie7 .header-menu li ul li:first-child a {
+	border-radius: 0;
+}
+#ie7 .header-menu li ul li a {
+	padding-top: 16px;
+	margin-top: 0;
+	text-transform: capitalize;
+}
+#ie7 .header-menu li ul li:last-child {
+	border-bottom: none;
+}
+#ie7 .header-menu li ul li ul {
+	margin-left: 216px;
+	top: 24px;
+}
+#ie7 .header-menu  .current-menu-item > a,
+#ie7 .header-menu  .current-menu-ancestor > a,
+#ie7 .header-menu  .current_page_item > a,
+#ie7 .header-menu  .current_page_ancestor > a {
+	background-color: #26a4d7;
+	padding: 1.7em 1.2em 1.7em 1.7em;
+}
+#ie7 #container {
+	margin: 0 auto;
+	width: 940px;
+	height: 344px;
+	margin-bottom: 30px;
+	position: relative;
+	background: #fff;
+	z-index: -1999;
+}
+#ie7 .journalism-text_file {
+	cursor: pointer;
+	padding: 17px 0 17px 10px;
+	margin-top: -1em;
+	display: block;
+	font-size: 13px;
+}
+#ie7 .leave-reply{
+	margin-top: 40px;
+}

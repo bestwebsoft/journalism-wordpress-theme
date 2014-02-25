@@ -1,0 +1,80 @@
+/*
+**ie8
+*/
+#ie8 img {
+	width: inherit;
+}
+#ie8 .post dl {
+	padding-top: 0px;
+}
+#ie8 .post dl h4 {
+	padding: 0px;
+	margin: 0px;
+}
+#ie8 .header-menu li a{
+	word-spacing: -1.5px;
+	text-transform: uppercase;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 0px;
+	color: #ffffff;
+	letter-spacing: 0.019em;
+	display: block;
+	padding: 1.5em 1.2em 1.65em 1.7em;
+	z-index: 1000;
+}
+#ie8 .header-menu a:hover {
+	color: #8c8f90;
+}
+#ie8 .header-menu li ul {
+	display: none;
+	min-width: 218px;
+	height: auto;
+	position: absolute;
+	top: 56px;
+	z-index: 1500;
+	background-color: #181e21;
+}
+#ie8 .header-menu li ul li ul {
+	top: 40px;
+}
+#ie8 .header-menu  .current-menu-item > a,
+#ie8 .header-menu  .current-menu-ancestor > a,
+#ie8 .header-menu  .current_page_item > a,
+#ie8 .header-menu  .current_page_ancestor > a {
+	background-color: #26a4d7;
+	padding: 1.7em 1.2em 1.7em 1.7em;
+}
+#ie8 .journalism-text_file {
+	cursor: pointer;
+	padding: 17px 0 17px 10px;
+	margin-top: -1em;
+	display: block;
+	font-size: 13px;
+}
+#ie8 #sidebar .widget:first-child .journalism-form {
+    margin: 0;
+    padding: 0;
+}
+#ie8 .journalism-search-wrap .journalism-form .journalism-search-field {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 180px;
+	height: 28px;
+	padding-top: 15px;
+	padding-left: 17px;
+	padding-right: 61px;
+	background: url( images/search.png ) no-repeat 209px 15px #5e6264;
+	border: none 0px;
+	border-radius: 45px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	color: #181e21!important;
+	font-size: 1em;
+	letter-spacing: 0.098rem;
+	word-spacing: 0.09rem;
+}
+#ie8 .widget .journalism-search-wrap .journalism-form .journalism-search-field {
+	width: 145px;
+}
