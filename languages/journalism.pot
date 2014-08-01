@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: journalism\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-29 14:10+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: index.php:18
+#: index.php:59
+#: search.php:24
+#: archive.php:45
+#: category.php:31
+msgid "Leave a reply"
+msgstr ""
+
+#: index.php:18
+#: index.php:59
+#: search.php:24
+#: archive.php:45
+#: category.php:31
+msgid "1 Reply"
+msgstr ""
+
+#: index.php:18
+#: search.php:24
+#: archive.php:45
+#: category.php:31
+msgid "% Replies"
+msgstr ""
+
+#: index.php:25
+#: index.php:66
+#: search.php:31
+#: archive.php:51
+#: single.php:27
+#: image.php:19
+#: category.php:38
+#: page.php:27
+msgid "Posted on"
+msgstr ""
+
+#: index.php:29
+#: index.php:70
+#: search.php:35
+#: archive.php:55
+#: single.php:31
+#: image.php:19
+#: category.php:42
+msgid "in"
+msgstr ""
+
+#: index.php:41
+#: index.php:86
+#: search.php:48
+#: archive.php:71
+#: single.php:51
+#: image.php:77
+#: category.php:58
+#: functions.php:301
+#: functions.php:335
+#: page.php:43
+msgid "Edit"
+msgstr ""
+
+#: index.php:59
+msgid "% Reply"
+msgid_plural "% Replies"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: index.php:84
+#: search.php:50
+#: archive.php:69
+#: category.php:56
+msgid "[Top]"
+msgstr ""
+
+#: header.php:46
+msgid "You have JavaScript disabled..."
+msgstr ""
+
+#: search.php:13
+#: search.php:61
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:66
+#: archive.php:78
+#: category.php:65
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:67
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: search.php:72
+#: 404.php:22
+msgid "Most Used Categories"
+msgstr ""
+
+#: footer.php:6
+msgid "Powered by "
+msgstr ""
+
+#: footer.php:7
+msgid " and "
+msgstr ""
+
+#: archive.php:14
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:16
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:16
+msgid "F Y"
+msgstr ""
+
+#: archive.php:18
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:18
+msgid "Y"
+msgstr ""
+
+#: archive.php:20
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: archive.php:22
+#: category.php:13
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:24
+#, php-format
+msgid "Author&#8217;s Archive: %s"
+msgstr ""
+
+#: archive.php:26
+#: sidebar.php:33
+msgid "Archives"
+msgstr ""
+
+#: archive.php:81
+#: category.php:67
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:16
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: comments.php:21
+#: comments.php:31
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:22
+#: comments.php:32
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:40
+msgid "Comments are closed."
+msgstr ""
+
+#: sidebar.php:15
+msgid "Recent Posts"
+msgstr ""
+
+#: sidebar.php:24
+msgid "Recent Comments"
+msgstr ""
+
+#: sidebar.php:39
+msgid "Catigories"
+msgstr ""
+
+#: 404.php:13
+msgid "Page Not Found ERROR 404"
+msgstr ""
+
+#: 404.php:16
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: image.php:27
+msgid "See in full size: "
+msgstr ""
+
+#: image.php:27
+msgid "full size of "
+msgstr ""
+
+#: image.php:27
+msgid "px"
+msgstr ""
+
+#: image.php:28
+msgid "Next image &rarr;"
+msgstr ""
+
+#: image.php:29
+msgid "&larr; Previous image"
+msgstr ""
+
+#: image.php:68
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:33
+msgid "Enter search keyword"
+msgstr ""
+
+#: functions.php:43
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:82
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:116
+msgid "Newer posts"
+msgstr ""
+
+#: functions.php:117
+msgid "Older posts"
+msgstr ""
+
+#: functions.php:230
+msgid "If you want to add this post in slider, choose the checkbox &nbsp "
+msgstr ""
+
+#: functions.php:274
+msgid "You have not uploaded the featured image."
+msgstr ""
+
+#: functions.php:300
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:314
+msgid "on "
+msgstr ""
+
+#: functions.php:314
+msgid "said:"
+msgstr ""
+
+#: functions.php:320
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:325
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:337
+msgid "Reply"
+msgstr ""

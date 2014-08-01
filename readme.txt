@@ -3,8 +3,8 @@ Contributors: the BestWebSoft team
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: gray,  two-columns, left-sidebar,  fixed-layout,  custom-background,  custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
 Requires at least: 3.3
-Tested up to: 3.8.1
-Stable tag: 1.0.8
+Tested up to: 3.9.1
+Stable tag: 1.0.9
 Journalism WordPress theme, Copyright (C) 2013 BestWebSoft
 Journalism WordPress theme is licensed under the GPL v3
 License: GNU General Public License v3
@@ -14,8 +14,7 @@ The Journalism theme for WordPress is a simple solution to customize your websit
 
 == Description ==
 
-The Journalism theme for WordPress is a simple solution to customize your website. It's a simple and very powerful tool for organizing your blog or other websites.
-You may change some design elements from Admin UI like: background of page, header text-color, header background-image.
+Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and imporve the fucntionality accordingly. The demo version of this theme can be found at http://bestwebsoft.com/wordpress_demo_theme/journalism/
 
 = Copyrights for Resources used in this theme =
 
@@ -93,13 +92,18 @@ You can use our contact form for any support questions: http://bestwebsoft.com/c
 
 == Changelog ==
 
+= 1.0.9 - 30.07.2014 =
+* Update: We updated all functionality for wordpress 3.9.1. 
+* New: We added journalism.pot file. 
+* Bugfix: We fixed bugs in script.js.
+
 = 1.0.8 - 11.02.2014 =
 * Budfix : We renamed `add_to_slider` custom post meta data.
 
 = 1.0.7 - 08.01.2014 =
-* Update : The theme's license was changed to GNU General Public License v3.
-* Update : Footer Credit Link was changed.
-* Budfix : We fixed the bug of the Newer Posts links in Archives.
+* Update: The theme's license was changed to GNU General Public License v3.
+* Update: Footer Credit Link was changed.
+* Budfix: We fixed the bug of the Newer Posts links in Archives.
 
 = 1.0.6 - 05.12.2013 =
 We changed functional of slider displaying.
@@ -120,6 +124,9 @@ Changes to style.css to style tag cloud widget and to correct display of very lo
 Displaying of the comment form was fixed.
 
 == Upgrade Notice ==
+
+= 1.0.9 =
+We updated all functionality for wordpress 3.9.1. We added journalism.pot file. We fixed bugs in script.js.
 
 = 1.0.8 =
 We renamed `add_to_slider` custom post meta data.

@@ -68,31 +68,28 @@
 		$( '.journalism-selectdiv' ).append( '<span class="sel-styled-inner"></span>' );
 		$( '.journalism-selectdiv' ).append( '<div class="journalism-select-content-open"></div>' );
 		$( '.journalism-selectbox' ).children( 'option' ).each( function() {
-			if( $( this ).attr( 'disabled' ) ){
+			if ( $( this ).attr( 'disabled' ) ) {
 				$( this ).parent().parent().children( '.journalism-select-content-open' ).append( '<div class="journalism-sel-opt-dis">'+$( this ).text()+'</div>' );
-				}
-			else{
+			} else {
 				$( this ).parent().parent().children( '.journalism-select-content-open' ).append( '<div class="journalism-sel-opt" value="'+$( this ).val()+'">'+$( this ).text()+'</div>' );
-				}
+			}
 		});
 		$( '.journalism-selectdiv' ).click( function(){
 			$( this ).children( '.journalism-select-content-open' ).slideToggle( 700 );
 			$( this ).children( '.journalism-select-content-open' ).children( '.journalism-sel-opt' ).click( function(){
 				$( this ).parent().parent().children( '.journalism-seltext' ).text( $( this ).text() );
 				$( this ).parent().parent().children( '.journalism-selectbox' ).val( $( this ).text() );
-				var url = $( this ).attr( 'value' ); // get .sel_opt value
-				if ( url.indexOf( 'http' )+1 ) { // require a URL
-					window.location = url; // redirect
-				};
-				var domain =window.location.origin;
-				if( url >= 3 ){
-					window.location.href = domain + "?cat=" + url;
-				};
+				$( this ).parent().parent().children( 'select' ).children( 'option' ).removeAttr( 'selected' );
+				$( this ).parent().parent().children( 'select' ).children( 'option' ).eq( $( this ).index() ).attr( 'selected', 'selected' ).trigger( 'change' );
 			});
 		}); 
 		$( '.journalism-selectbox' ).each( function() {
 			$( this ).parent().append( '<span class="journalism-seltext">'+$( this ).val()+'</span>' );
-			$( '.journalism-seltext' ).text( 'select' );
+			if ( $( this ).find( 'option[selected]' ).length > 0 ) {
+				$( this ).parent().find( '.journalism-seltext' ).text( $( this ).children( 'option[selected]' ).text() );
+			} else {
+				$( this ).parent().find( '.journalism-seltext' ).text( $( this ).children( 'option:first' ).text() );
+			}
 		});
 
 /*
@@ -179,8 +176,10 @@
 			$( 'textarea' ).each( function(){$( this ).val( '' );} );
 			$( 'select' ).each( function(){ 
 				$( this ).val( '' );
-				$( '.journalism-seltext' ).text( 'Selected' ); 
+				$( this ).children( 'option' ).removeAttr( 'selected' );
+				$( this ).parent().children( '.journalism-seltext' ).text( $( this ).children( 'option:first' ).text() ); 
 			});
+
 			$( 'input[type="radio"]' ).each( function(){
 				$( this ).checked = false;
 				if( $( this ).parent().hasClass( 'active' ) ){

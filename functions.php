@@ -359,4 +359,3 @@ add_action( 'journalism_slides_template', 'journalism_slider_template' );
 add_action( 'journalism_featured_images_title', 'journalism_featured_image_title' );
 add_action( 'add_meta_boxes', 'journalism_add_metabox_for_slider' );
 add_action('save_post', 'journalism_save_box_data');
-?>
