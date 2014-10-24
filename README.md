@@ -10,7 +10,7 @@ The Journalism theme for WordPress is a simple solution to customize your websit
 <a href="http://bestwebsoft.com/products/journalism/faq" target=_blank>FAQ</a> | 
 <a href="http://bestwebsoft.com/products/journalism/screenshots" target=_blank>Screenshots</a> | 
 <a href="http://bestwebsoft.com/products/journalism/changelog" target=_blank>Changelog</a> | 
-<a href="http://bestwebsoft.com/products/journalism/" target=_blank>Download</a>
+<a href="http://bestwebsoft.com/products/journalism/download" target=_blank>Download</a>
 
 Translation
 -----------------------------
