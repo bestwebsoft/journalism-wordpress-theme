@@ -1,8 +1,9 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: journalism\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-29 14:10+0300\n"
+"POT-Creation-Date: 2016-06-07 17:47+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
 "Language-Team: \n"
@@ -14,284 +15,265 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: index.php:18
-#: index.php:59
-#: search.php:24
-#: archive.php:45
-#: category.php:31
+#: 404.php:13
+#, fuzzy
+msgid "Page Not Found ERROR 404"
+msgstr "Страница не найдена Ошибка 404"
+
+#: 404.php:16
+#, fuzzy
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно поиск по сайту или одна из ссылок смогут помочь."
+
+#: 404.php:22 search.php:74
+#, fuzzy
+msgid "Most Used Categories"
+msgstr "Часто используемые категории"
+
+#: archive.php:14
+#, fuzzy, php-format
+msgid "Daily Archives: %s"
+msgstr "Архив за день: %s"
+
+#: archive.php:16
+#, fuzzy, php-format
+msgid "Monthly Archives: %s"
+msgstr "Архив за месяц:%s"
+
+#: archive.php:18
+#, fuzzy, php-format
+msgid "Yearly Archives: %s"
+msgstr "Архив за год: %s"
+
+#: archive.php:20
+#, fuzzy, php-format
+msgid "Tag Archives: %s"
+msgstr "Архив метки: %s"
+
+#: archive.php:22 category.php:13
+#, fuzzy, php-format
+msgid "Category Archives: %s"
+msgstr "Архив Категории: %s"
+
+#: archive.php:24
+#, fuzzy, php-format
+msgid "Author&#8217;s Archive: %s"
+msgstr "Архив автора: %s"
+
+#: archive.php:26 sidebar.php:43
+#, fuzzy
+msgid "Archives"
+msgstr "Архивы"
+
+#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
+#, fuzzy
 msgid "Leave a reply"
-msgstr ""
+msgstr "Написать комментарий"
 
-#: index.php:18
-#: index.php:59
-#: search.php:24
-#: archive.php:45
-#: category.php:31
+#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
+#, fuzzy
 msgid "1 Reply"
-msgstr ""
+msgstr "1 Комментарий"
 
-#: index.php:18
-#: search.php:24
-#: archive.php:45
-#: category.php:31
+#: archive.php:46 category.php:32 index.php:25 search.php:25
+#, fuzzy
 msgid "% Replies"
-msgstr ""
+msgstr "% Коментариев"
 
-#: index.php:25
-#: index.php:66
-#: search.php:31
-#: archive.php:51
-#: single.php:27
-#: image.php:19
-#: category.php:38
-#: page.php:27
+#: archive.php:52 category.php:39 image.php:19 index.php:32 index.php:75
+#: search.php:32 single.php:27
+#, fuzzy
 msgid "Posted on"
-msgstr ""
+msgstr "Опубликовано"
 
-#: index.php:29
-#: index.php:70
-#: search.php:35
-#: archive.php:55
-#: single.php:31
-#: image.php:19
-#: category.php:42
+#: archive.php:57 category.php:43 image.php:19 index.php:37 index.php:79
+#: search.php:37 single.php:32
 msgid "in"
 msgstr ""
 
-#: index.php:41
-#: index.php:86
-#: search.php:48
-#: archive.php:71
-#: single.php:51
-#: image.php:77
-#: category.php:58
-#: functions.php:301
-#: functions.php:335
-#: page.php:43
-msgid "Edit"
-msgstr ""
-
-#: index.php:59
-msgid "% Reply"
-msgid_plural "% Replies"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: index.php:84
-#: search.php:50
-#: archive.php:69
-#: category.php:56
+#: archive.php:71 category.php:57 index.php:93 search.php:52
+#, fuzzy
 msgid "[Top]"
-msgstr ""
+msgstr "[Вверх]"
 
-#: header.php:46
-msgid "You have JavaScript disabled..."
-msgstr ""
+#: archive.php:73 category.php:59 functions.php:259 functions.php:294
+#: image.php:82 index.php:49 index.php:95 page.php:31 search.php:50
+#: single.php:48
+#, fuzzy
+msgid "Edit"
+msgstr "Редактировать"
 
-#: search.php:13
-#: search.php:61
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: search.php:66
-#: archive.php:78
-#: category.php:65
+#: archive.php:80 category.php:66 search.php:68
+#, fuzzy
 msgid "Nothing Found"
-msgstr ""
+msgstr "Ничего не найдено"
 
-#: search.php:67
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr ""
-
-#: search.php:72
-#: 404.php:22
-msgid "Most Used Categories"
-msgstr ""
-
-#: footer.php:6
-msgid "Powered by "
-msgstr ""
-
-#: footer.php:7
-msgid " and "
-msgstr ""
-
-#: archive.php:14
-#, php-format
-msgid "Daily Archives: %s"
-msgstr ""
-
-#: archive.php:16
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr ""
-
-#: archive.php:16
-msgid "F Y"
-msgstr ""
-
-#: archive.php:18
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr ""
-
-#: archive.php:18
-msgid "Y"
-msgstr ""
-
-#: archive.php:20
-#, php-format
-msgid "Tag Archives: %s"
-msgstr ""
-
-#: archive.php:22
-#: category.php:13
-#, php-format
-msgid "Category Archives: %s"
-msgstr ""
-
-#: archive.php:24
-#, php-format
-msgid "Author&#8217;s Archive: %s"
-msgstr ""
-
-#: archive.php:26
-#: sidebar.php:33
-msgid "Archives"
-msgstr ""
-
-#: archive.php:81
-#: category.php:67
+#: archive.php:83 category.php:68
+#, fuzzy
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
-msgstr ""
+msgstr "Извините но ничего не найдено для запрошенного архива. Возможно поиск поможет найти похожую запись."
 
 #: comments.php:10
+#, fuzzy
 msgid "This post is password protected. Enter the password to view any comments."
-msgstr ""
+msgstr "Это сообщение защищено паролем. Введите пароль для просмотра комментариев."
 
-#: comments.php:16
-#, php-format
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: comments.php:21
-#: comments.php:31
+#: comments.php:20 comments.php:30
+#, fuzzy
 msgid "&larr; Older Comments"
-msgstr ""
+msgstr "&larr; Предыдущие Комментарии"
 
-#: comments.php:22
-#: comments.php:32
+#: comments.php:21 comments.php:31
+#, fuzzy
 msgid "Newer Comments &rarr;"
-msgstr ""
+msgstr "Следующие комментарии &rarr;"
 
-#: comments.php:40
+#: comments.php:39
+#, fuzzy
 msgid "Comments are closed."
+msgstr "Комментарии запрещены"
+
+#: footer.php:14
+#, fuzzy
+msgid "Powered by"
+msgstr "Создано"
+
+#: footer.php:15
+msgid "and"
 msgstr ""
 
-#: sidebar.php:15
-msgid "Recent Posts"
-msgstr ""
+#: functions.php:11
+#, fuzzy
+msgid "Widget Area"
+msgstr "Область виджетов"
 
-#: sidebar.php:24
-msgid "Recent Comments"
-msgstr ""
+#: functions.php:13
+#, fuzzy
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Добавьте сюда виджеты для показа в боковой колонке."
 
-#: sidebar.php:39
-msgid "Catigories"
-msgstr ""
-
-#: 404.php:13
-msgid "Page Not Found ERROR 404"
-msgstr ""
-
-#: 404.php:16
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
-msgstr ""
-
-#: image.php:27
-msgid "See in full size: "
-msgstr ""
-
-#: image.php:27
-msgid "full size of "
-msgstr ""
-
-#: image.php:27
-msgid "px"
-msgstr ""
-
-#: image.php:28
-msgid "Next image &rarr;"
-msgstr ""
-
-#: image.php:29
-msgid "&larr; Previous image"
-msgstr ""
-
-#: image.php:68
-msgid "Pages:"
-msgstr ""
-
-#: functions.php:33
-msgid "Enter search keyword"
-msgstr ""
-
-#: functions.php:43
+#: functions.php:27
+#, fuzzy
 msgid "Primary Navigation"
-msgstr ""
+msgstr "Меню навигации"
 
-#: functions.php:82
-#, php-format
+#: functions.php:78
+#, fuzzy, php-format
 msgid "Page %s"
-msgstr ""
-
-#: functions.php:116
-msgid "Newer posts"
-msgstr ""
+msgstr "Страница:%s"
 
 #: functions.php:117
+#, fuzzy
+msgid "Enter search keyword"
+msgstr "Введите слово"
+
+#: functions.php:139
+#, fuzzy
 msgid "Older posts"
-msgstr ""
+msgstr "Предыдущая страница"
 
-#: functions.php:230
+#: functions.php:140
+#, fuzzy
+msgid "Newer posts"
+msgstr "Следующая страница"
+
+#: functions.php:192
+#, fuzzy
 msgid "If you want to add this post in slider, choose the checkbox &nbsp "
-msgstr ""
+msgstr "Если вы хотите добавить этот пост в слайдер, установите галочку в чекбокс"
 
-#: functions.php:274
-msgid "You have not uploaded the featured image."
-msgstr ""
-
-#: functions.php:300
+#: functions.php:257
+#, fuzzy
 msgid "Pingback:"
-msgstr ""
+msgstr "Уведомление:"
 
-#: functions.php:314
+#: functions.php:273
 msgid "on "
 msgstr ""
 
-#: functions.php:314
+#: functions.php:273
+#, fuzzy
 msgid "said:"
-msgstr ""
+msgstr "написал:"
 
-#: functions.php:320
-#, php-format
+#: functions.php:279
+#, fuzzy, php-format
 msgid "%1$s at %2$s"
-msgstr ""
+msgstr "%1$s в %2$s"
 
-#: functions.php:325
+#: functions.php:284
+#, fuzzy
 msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: functions.php:297
+#, fuzzy
+msgid "Reply"
+msgstr "Ответить"
+
+#: header.php:52
+#, fuzzy
+msgid "You have JavaScript disabled..."
+msgstr "У Вас отключён  JavaScript..."
+
+#: image.php:27
+#, fuzzy
+msgid "See in full size: "
+msgstr "Посмотреть полноразмерное  изображение:"
+
+#: image.php:28
+#, fuzzy
+msgid "full size of "
+msgstr "Полноразмерное  изображение "
+
+#: image.php:30
+#, fuzzy
+msgid "px"
+msgstr "пикс"
+
+#: image.php:32
+#, fuzzy
+msgid "Next image &rarr;"
+msgstr "Следующее изображение &rarr;"
+
+#: image.php:33
+#, fuzzy
+msgid "&larr; Previous image"
+msgstr "&larr; Предыдущее изображение."
+
+#: image.php:73
+#, fuzzy
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: search.php:13 search.php:63
+#, fuzzy, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска для: %s"
+
+#: search.php:69
+#, fuzzy
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Жаль, но ничто не соответствует критериям  Вашего поиска. Пожалуйста, попробуйте еще раз с другими ключевыми словами."
+
+#: sidebar.php:17
+#, fuzzy
+msgid "Recent Posts"
+msgstr "Свежие Записи"
+
+#: sidebar.php:28
+msgid "Look"
 msgstr ""
 
-#: functions.php:337
-msgid "Reply"
-msgstr ""
+#: sidebar.php:34
+#, fuzzy
+msgid "Recent Comments"
+msgstr "Свежие комментарии"
+
+#: sidebar.php:49
+#, fuzzy
+msgid "Catigories"
+msgstr "Категории"

@@ -1,14 +1,16 @@
 /*
 Theme Name: Journalism
-Theme URI: http://bestwebsoft.com/theme/journalism/
-Description: Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and imporve the fucntionality accordingly. The demo version of this theme can be found at http://bestwebsoft.com/wordpress_demo_theme/journalism/
-Author URI: https://github.com/bestwebsoft
-Author: the BestWebSoft team
-Version: 1.0.9
+Theme URI: http://bestweblayout.com/products/journalism/
+Author: BestWebLayout
+Author URI: http://bestweblayout.com/
+Description: Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and improve the functionality accordingly. The demo version of this theme can be found at http://wp-demo-theme.bestweblayout.com/journalism/
+Version: 1.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Tags: black, blue, two-columns, left-sidebar, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, editor-style, custom-menu, flexible-header
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, sticky-post, translation-ready
 Text Domain: journalism
+Journalism WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Journalism is distributed under the terms of the GNU GPL
 */
 
 /*
@@ -19,19 +21,20 @@ Text Domain: journalism
 	font-family: 'ubuntu_monoregular';
 	src: url('fonts/ubuntumono-regular-webfont.eot');
 	src: url('fonts/ubuntumono-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ubuntumono-regular-webfont.woff') format('woff'),
-		url('fonts/ubuntumono-regular-webfont.ttf') format('truetype'),
-		url('fonts/ubuntumono-regular-webfont.svg#ubuntu_monoregular') format('svg');
+	url('fonts/ubuntumono-regular-webfont.woff') format('woff'),
+	url('fonts/ubuntumono-regular-webfont.ttf') format('truetype'),
+	url('fonts/ubuntumono-regular-webfont.svg#ubuntu_monoregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: 'ubuntu_monoitalic';
 	src: url('fonts/ubuntumono-italic-webfont.eot');
 	src: url('fonts/ubuntumono-italic-webfont.eot?#iefix') format('embedded-opentype'),
-		url('fonts/ubuntumono-italic-webfont.woff') format('woff'),
-		url('fonts/ubuntumono-italic-webfont.ttf') format('truetype'),
-		url('fonts/ubuntumono-italic-webfont.svg#ubuntu_monoitalic') format('svg');
+	url('fonts/ubuntumono-italic-webfont.woff') format('woff'),
+	url('fonts/ubuntumono-italic-webfont.ttf') format('truetype'),
+	url('fonts/ubuntumono-italic-webfont.svg#ubuntu_monoitalic') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -46,27 +49,31 @@ html, body, span, applet, object, iframe, del, dfn, font, ins, s, samp,
 small, strike, strong, dd,
 fieldset, legend,
 caption {
-	border: 0;
-	font-family: inherit;
-	font-size: 100%;
-	font-style: inherit;
-	font-weight: inherit;
 	margin: 0;
-	outline: 0;
 	padding: 0;
+	outline: 0;
+	border: 0;
 	vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
 }
-: focus {
+
+*:focus {
 	outline: 0;
 }
+
 caption, th, td {
-	font-weight: normal;
 	text-align: left;
+	font-weight: normal;
 }
+
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
+
 a img {
 	border: 0;
 }
@@ -74,70 +81,76 @@ a img {
 noscript {
 	background-color: #dddddd;
 }
+
 html, body {
 	height: 100%;
 }
+
 body {
-	background-color: #273035;
 	position: relative;
+	background-color: #273035;
+	color: #828789;
 	font-size: 13px;
 	font-family: 'ubuntu_monoregular';
-	color: #828789;
+	word-wrap: break-word;
+	word-break: break-word;
 }
-a{
+
+a {
 	color: #26a4d7;
 	text-decoration: none;
 }
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'ubuntu_monoregular';
-	font-weight: bolder;
 	color: #ffffff;
-}
-p {
+	font-weight: bolder;
 	font-family: 'ubuntu_monoregular';
-	word-spacing: 0.03em;
-	line-height: 1.64em;
-	letter-spacing: 0.02em;
 }
-strong, big{
+
+p {
+	word-spacing: 0.03em;
+	letter-spacing: 0.02em;
+	font-family: 'ubuntu_monoregular';
+	line-height: 1.64em;
+}
+
+strong, big {
 	font-weight: bold;
 }
+
 ins {
 	background: none repeat scroll 0 0 #ccc;
 	text-decoration: none;
 }
+
 code, kbd, samp, var, abbr, acronym, tt {
-	font: 13px, 'ubuntu_monoregular', monospace;
+	font-size: 13px;
+	font-family: 'ubuntu_monoregular', monospace;
 	font-weight: bold;
 	line-height: 21px;
 }
+
 address {
-	border: 0 none;
-	margin: 0;
-	outline: 0 none;
-	padding: 0;
-	vertical-align: baseline;
 	display: block;
 	margin: 0 0 1.625em;
+	padding: 0;
+	outline: 0 none;
+	border: 0 none;
+	vertical-align: baseline;
 }
+
 hr {
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-top-colors: none;
-	background: none repeat scroll 0 0 transparent;
-	border: none 0px;
-	color: #5e6264;
-	border-bottom: 1px dotted #5e6264;
-	height: 0px;
-	border-style: dashed none none;
-	border-width: 1px medium medium;
-	margin-bottom: 15px;
 	margin-top: 3px;
+	margin-bottom: 15px;
+	height: 0;
+	border: none 0;
+	border-bottom: 1px dashed #5e6264;
 }
-body.wp-editor { 
+
+body.wp-editor {
 	font-size: 24px;
 }
+
 body.wp-editor a {
 	color: #3D8FD5;
 	font-size: 24px;
@@ -147,31 +160,34 @@ body.wp-editor a {
 **blockquote
 */
 blockquote p:before {
-	content: open-quote;
-	color: #999;
 	clear: both;
-}
-blockquote p:after {
-	content: close-quote;
 	color: #999;
+	content: open-quote;
+}
+
+blockquote p:after {
 	position: relative;
 	top: 0;
 	clear: both;
+	color: #999;
+	content: close-quote;
 }
+
 blockquote, q {
-	quotes:  "\0022" "\0022";
 	margin-bottom: 38px;
+	quotes: "\0022" "\0022";
 }
+
 .joournal-blockquote-before {
-	background: url(images/sprite.png) no-repeat scroll transparent;
-	background-position: -76px -109px;
 	float: left;
-	height: 26px;
 	clear: both;
 	padding-left: 44px;
+	height: 26px;
+	background: transparent url(images/sprite.png) no-repeat scroll -76px -109px;
 }
+
 blockquote p {
-	padding-top: 0px!important;
+	padding-top: 0 !important;
 	font-family: 'ubuntu_monoitalic';
 }
 
@@ -179,35 +195,40 @@ blockquote p {
 **header
 */
 .journalism-carcas {
-	width: 940px;
-	margin-left: auto;
 	margin-right: auto;
-	background-color: #181e21;
-	border-radius: 5px;
+	margin-left: auto;
 	padding-top: 20px;
-}
-.journalism_image_logo{
 	width: 940px;
-	margin: 0 auto;
+	border-radius: 5px;
+	background-color: #181e21;
 }
+
+.journalism_image_logo {
+	margin: 0 auto;
+	width: 940px;
+}
+
 .journalism-logo {
-	margin-left: auto;
 	margin-right: auto;
-	padding-bottom: 34px;
+	margin-left: auto;
 	padding-top: 41px;
+	padding-bottom: 34px;
 	width: 350px;
 	text-align: center;
 	line-height: 27px;
 }
+
 .header h1 {
 	padding-bottom: 6px;
-	font-size: 26px;
 	letter-spacing: -0.02rem;
+	font-size: 26px;
 }
+
 .header h1 a {
 	color: #ffffff;
 }
-.header p{
+
+.header p {
 }
 
 /*
@@ -215,75 +236,88 @@ blockquote p {
 */
 .journalism-top-menu {
 	z-index: -1000;
-	background-color: #181e21;
-	border-radius: 5px;
-	min-height: 58px;
-	width: 940px;
-	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 41px;
+	margin-left: auto;
+	min-height: 58px;
+	width: 940px;
+	border-radius: 5px;
+	background-color: #181e21;
 }
-.header-menu ul{
-	padding: 0px;
+
+.header-menu ul {
+	padding: 0;
 }
-.header-menu li{
+
+.header-menu li {
+	position: relative;
 	display: inline-block;
 	list-style: none;
-	position: relative;
 }
-.header-menu li a{
-	word-spacing: -1.5px;
-	text-transform: uppercase;
-	font-size: 13px;
-	text-decoration: none;
+
+.header-menu li a {
+	display: block;
 	padding: 1.5em 1.5em 1.55em 1.8em;
 	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	word-spacing: -1.5px;
 	letter-spacing: 0.019em;
-	display: block;
+	font-size: 13px;
 }
+
 .header-menu a:hover {
 	color: #8c8f90;
 }
-.header-menu li:first-child a{
+
+.header-menu li:first-child a {
 }
+
 .header-menu li ul {
-	display: none;
-	min-width: 218px;
-	height: auto;
 	position: absolute;
 	top: 55px;
 	z-index: 1500;
+	display: none;
+	min-width: 218px;
+	height: auto;
 	background-color: #181e21;
 }
+
 .header-menu li ul li ul {
-	margin-left: 216px;
 	top: 26px;
+	margin-left: 216px;
 }
+
 .header-menu li ul li:first-child a {
-	border-radius: 0px;
+	border-radius: 0;
 }
+
 .header-menu li ul li {
 	display: block;
 	float: none;
 	border-bottom: 1px dashed #273035;
 }
+
 .header-menu li ul li:last-child {
-	border: 0px none;
+	border: 0 none;
 }
+
 .header-menu li ul li a {
-	padding-top: 16px;
 	margin-top: 0;
+	padding-top: 16px;
 	text-transform: capitalize;
 }
+
 .header-menu li ul li:last-child {
 	border-bottom: none;
 }
-.header-menu  .current-menu-item > a,
-.header-menu  .current-menu-ancestor > a,
-.header-menu  .current_page_item > a,
-.header-menu  .current_page_ancestor > a {
-	background-color: #26a4d7;
+
+.header-menu .current-menu-item > a,
+.header-menu .current-menu-ancestor > a,
+.header-menu .current_page_item > a,
+.header-menu .current_page_ancestor > a {
 	padding: 1.7em 1.5em 1.7em 1.8em;
+	background-color: #26a4d7;
 }
 
 /*
@@ -292,82 +326,93 @@ blockquote p {
 /* Prevent the slideshow from flashing on load */
 #slides {
 	width: 900px;
-	
+
 }
 
 /* Center the slideshow */
 .container {
-	margin: 0 auto;
-	width: 900px;
 	overflow: hidden;
-	margin-bottom: 55px;
+	margin: 0 auto 55px;
+	width: 900px;
 	border-radius: 5px;
 }
+
 .slidesjs-pagination {
+	margin: 9px auto 0 426px;
 	max-width: 100%;
-	margin: 0px auto;
 	list-style: none;
-	margin-left: 426px;
-	margin-top: 9px;
 }
+
 .slidesjs-pagination li {
-	padding-right: 5px;
-	margin: 0px;
 	float: left;
+	margin: 0;
+	padding-right: 5px;
 }
+
 .slidesjs-pagination li a {
 	display: block;
-	width: 13px;
-	height: 0;
-	padding-top: 13px;
-	background-image: url('images/sprite.png');
-	background-position: -119px -148px;
 	float: left;
 	overflow: hidden;
+	padding-top: 13px;
+	width: 13px;
+	height: 0;
+	background: url('images/sprite.png') -119px -148px;
 }
+
 .slidesjs-pagination li a.active,
 .slidesjs-pagination li a:hover.active {
 	background-position: -139px -148px;
 }
+
 .slidesjs-pagination li a:hover {
 	background-position: -139px -148px;
 }
+
 #slides a:link,
 #slides a:visited {
 	color: #333;
 }
+
 #slides a:hover,
 #slides a:active {
 	color: #9e2020;
 }
-.slidesjs-pagination .slidesjs-pagination-item{
+
+.slidesjs-pagination .slidesjs-pagination-item {
 	display: inline;
 }
-.slidesjs-pagination-item{
-	height: 17px;
+
+.slidesjs-pagination-item {
 	width: 15px;
+	height: 17px;
 }
-#slides h3{
+
+#slides h3 {
 	margin-left: 40px;
 }
-.slider-text{
+
+.slider-text {
 	position: absolute;
 	top: 35px;
 	left: 40px;
 }
-.slider-text h1{
-	font-size: 21px;
+
+.slider-text h1 {
 	margin-bottom: 12px;
+	font-size: 21px;
 }
-.slider-text p{
+
+.slider-text p {
 	color: #c5c7c9;
 }
+
 .slidesjs-container {
-	border-radius: 5px;
+	width: 900px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	width: 900px;
+	border-radius: 5px;
 }
+
 /*
 **end header
 */
@@ -376,12 +421,12 @@ blockquote p {
 **content
 */
 #content {
+	float: left;
+	overflow: hidden;
 	margin-right: 20px;
 	margin-left: 20px;
 	padding-bottom: 10px;
 	width: 620px;
-	overflow: hidden;
-	float: left;
 }
 
 /*
@@ -391,362 +436,424 @@ blockquote p {
 	padding-right: 20px;
 	padding-left: 20px;
 }
+
 .nav-link {
-	min-width: 161px;
-	padding-bottom: 10px;
-	margin-right: 20px;
 	float: right;
+	margin-right: 20px;
+	padding-bottom: 10px;
+	min-width: 161px;
 }
+
 .nav-link a {
-	text-decoration: none;
 	color: #3d8fd5;
+	text-decoration: none;
 }
+
 .post img {
 	position: relative;
 	max-width: 100% !important;
-	height: auto!important;
+	height: auto !important;
 }
-#content img[class*="align"]{
+
+#content img[class*="align"] {
 	border: 6px solid #262c2e;
 }
+
 .entry-content p, .entry_footer div, .entry_footer p, .post p {
+	padding: 10px 20px 10px 0;
 	color: #999;
 	font-size: 13px;
 	line-height: 1.75;
-	padding: 10px 20px 10px 0;
 }
+
 .post .wp-caption-text {
-	color: #5A5E60;
-	padding: 5px 0 0 0px;
 	position: relative;
+	padding: 5px 0 0 0;
+	color: #5A5E60;
 }
+
 .wp-caption {
-	background: none repeat scroll 0 0 #262c2e;
 	margin-bottom: 1.625em;
-	max-width: 97%;
 	padding: 9px;
+	max-width: 97%;
 	height: auto;
+	background: none repeat scroll 0 0 #262c2e;
 }
+
 .post {
 	position: relative;
-	margin-bottom: 30px;
-	background-color: #273035;
-	border-radius: 5px;
 	overflow: hidden;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	background-color: #273035;
 }
+
 .post p {
-	word-wrap: break-word;
-	line-height: 21px;
-	/*letter-spacing: 0.022rem;*/
 	padding-bottom: 0.6em;
+	word-wrap: break-word;
+	/*letter-spacing: 0.022rem;*/
+	line-height: 21px;
 }
+
 #content .post:first-child p {
 	padding-bottom: 1.25rem;
 }
+
 .post-data {
 	padding-bottom: 1.15rem;
 	letter-spacing: 0.007em;
 }
+
 .post .boat {
 	padding-bottom: 14px;
 }
+
 .post h1 {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 24px;
-	font-weight: bold;
-	letter-spacing: 0.015em;
-	padding-bottom: 0.85em;
 	padding-top: 0.85em;
+	padding-bottom: 0.85em;
+	color: #FFFFFF;
+	letter-spacing: 0.015em;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'ubuntu_monoregular';
 }
+
 .post h2 {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 21px;
-	font-weight: bold;
-	letter-spacing: -0.02em;
 	padding-bottom: 0.65em;
-}
-.post h3 {
 	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 18px;
-	font-weight: bold;
-	letter-spacing: -0.015em;
-	padding-bottom: 1.42em;
-	padding-top: 0.38em;
-	text-align: left;
-}
-.post h4 {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 15px;
-	font-weight: bold;
-	letter-spacing: -0.001rem;
-	padding-bottom: 1.43em;
-}
-.post h5 {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 13px;
-	font-weight: bold;
 	letter-spacing: -0.02em;
-	padding-bottom: 1.89em;
-}
-.post h6 {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 11px;
 	font-weight: bold;
-	letter-spacing: -0.03em;
-	padding-bottom: 3.8em;
-}
-.post .entry-title {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
 	font-size: 21px;
+	font-family: 'ubuntu_monoregular';
+}
+
+.post h3 {
+	padding-top: 0.38em;
+	padding-bottom: 1.42em;
+	color: #FFFFFF;
+	text-align: left;
+	letter-spacing: -0.015em;
 	font-weight: bold;
+	font-size: 18px;
+	font-family: 'ubuntu_monoregular';
+}
+
+.post h4 {
+	padding-bottom: 1.43em;
+	color: #FFFFFF;
+	letter-spacing: -0.001rem;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: 'ubuntu_monoregular';
+}
+
+.post h5 {
+	padding-bottom: 1.89em;
+	color: #FFFFFF;
 	letter-spacing: -0.02em;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: 'ubuntu_monoregular';
+}
+
+.post h6 {
+	padding-bottom: 3.8em;
+	color: #FFFFFF;
+	letter-spacing: -0.03em;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: 'ubuntu_monoregular';
+}
+
+.post .entry-title {
 	margin: 1.6em 0 11px;
 	padding: 0;
 	width: 437px;
+	color: #FFFFFF;
+	letter-spacing: -0.02em;
+	font-weight: bold;
+	font-size: 21px;
+	font-family: 'ubuntu_monoregular';
 }
+
 .post .entry-title a {
-	word-wrap: break-word;
 	color: #ffffff;
+	word-wrap: break-word;
 }
+
 .post .entry-title a:hover {
 	color: #26a4d7;
 }
+
 #content .post:last-child .journalism-top {
 	margin-bottom: 1.33em;
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
+
 #content .post .journalism-top {
 	float: right;
-	text-decoration: none;
 	padding-bottom: 13px;
+	text-decoration: none;
 }
-#content:first-child .journalism-top{
+
+#content:first-child .journalism-top {
 	display: none;
 }
-.post ul:first-child{
-	margin-bottom: 0px;
+
+.post ul:first-child {
+	margin-bottom: 0;
 }
+
 .post ul {
 	margin-top: -4px;
 	margin-bottom: 31px;
 	padding-left: 46px;
 }
+
 .post ul li {
-	color: #757a7d;
 	padding-left: 31px;
-	line-height: 1.65rem;
-	font-size: 13px;
+	color: #757a7d;
 	letter-spacing: 0.02em;
+	font-size: 13px;
+	line-height: 1.65rem;
 }
+
 .post ul ul {
+	margin-bottom: 0;
 	padding-left: 11px;
-	margin-bottom: 0px;
 }
-.post ul ul li{
+
+.post ul ul li {
 	padding-left: 10px;
 }
+
 .post ul li a {
 	color: #757a7d;
 }
+
 .post ul li a:hover {
 	color: #3d8fd5;
 }
+
 .post ul ol {
 	padding-left: 22px;
 }
+
 .post ul ol li {
 	padding-left: 10px;
 }
+
 .post ol ul {
 	padding-left: 15px;
 }
-.post ol ul li{
+
+.post ol ul li {
 	padding-left: 10px;
 }
+
 ol {
-	margin-bottom: 9px;
 	margin-top: -5px;
+	margin-bottom: 9px;
 	padding-left: 57px;
 }
+
 ol li {
 	padding-left: 12px;
-	line-height: 1.625rem;
-	font-size: 13px;
 	letter-spacing: -0.012rem;
+	font-size: 13px;
+	line-height: 1.625rem;
 }
+
 ol li a {
 	color: #666;
 }
+
 ol li a:hover {
 	color: #3d8fd5;
 }
-.post ol:first-child{
-	margin-bottom: 0px;
+
+.post ol:first-child {
+	margin-bottom: 0;
 }
+
 ol ol {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	padding-left: 10px;
 	list-style: upper-alpha outside none;
 }
+
 ol ol ol {
 	list-style: lower-roman outside none;
 }
+
 dl {
-	padding-top: 12px;
 	margin-bottom: 1.55em;
+	padding-top: 12px;
 }
+
 dl li {
 	list-style: none;
-	line-height: 0rem;
 	letter-spacing: -0.01rem;
+	line-height: 0;
 }
+
 dl li h4 {
-	letter-spacing: -0.001rem!important;
+	letter-spacing: -0.001rem !important;
 }
+
 .post .lists {
 	list-style: decimal;
 }
+
 .post table {
-	border-bottom: 1px solid #EDEDED;
-	border-collapse: collapse;
+	margin: 0 0 30px;
+	width: 98%;
 	border-spacing: 0;
+	border-collapse: collapse;
+	border-bottom: 1px solid #EDEDED;
 	font-size: 14px;
 	line-height: 2;
-	width: 98%;
-	margin: 0 auto;
-	margin: 0 0 30px;
 }
+
 .post table tr {
 	border-bottom: 1px solid #EDEDED;
 }
+
 .post table tr td {
 	padding: 4px 6px 5px;
 	font-size: 12px;
 }
+
 .post dt {
-	font-weight: bold;
 	margin-left: 10px;
+	font-weight: bold;
 }
+
 .post dd {
 	margin-bottom: 1.625em;
 	margin-left: 10px;
 }
+
 .post .widget {
-	padding-right: 0px;
-	padding-left: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
 }
+
 .post .post-text {
 }
+
 .post .featured-image-title {
-	margin: 0px;
-	color: #5a5e60;
-	padding-bottom: 11px;
+	margin: 0;
 	padding-top: 12px;
+	padding-bottom: 11px;
 	padding-left: 20px;
 	background-color: #262c2e;
+	color: #5a5e60;
 }
+
 .post .featured-image {
-	border-radius: 5px 5px 0 0;
 	margin: 0 auto;
+	border-radius: 5px 5px 0 0;
 	background-color: #262c2e;
 }
+
 .post .featured-image img {
-	border-radius: 5px 5px 0 0;
 	display: block;
+	border-radius: 5px 5px 0 0;
 }
+
 .indexed .journalism-format-image footer .entry-meta {
-	background: none repeat scroll 0 0 #DDDDDD;
-	max-width: 96%;
 	overflow: hidden;
 	padding: 4%;
+	max-width: 96%;
+	background: none repeat scroll 0 0 #DDDDDD;
 }
+
 .entry-meta {
 	clear: both;
 	color: #666666;
 	font-size: 12px;
 	line-height: 18px;
 }
+
 .post:first-child .post-tag {
 	margin-bottom: 10px;
 }
+
 .post-tag {
-	background: url(images/tags.png) no-repeat scroll transparent;
-	background-position: 1px 5px;
-	padding-left: 11px;
 	margin-bottom: 10px;
+	padding-left: 11px;
+	background: transparent url(images/tags.png) no-repeat scroll 1px 5px;
 }
+
 .journalism-title {
 	position: relative;
-	margin-bottom: 30px;
-	background-color: #262c2e;
-	border-radius: 5px;
 	overflow: hidden;
+	margin-bottom: 30px;
 	padding-left: 20px;
+	border-radius: 5px;
+	background-color: #262c2e;
 }
+
 .journalism-title h1 {
-	color: #ffffff;
 	padding-top: 1.1em;
-	letter-spacing: 0.02em;
 	padding-bottom: 1.1em;
+	color: #ffffff;
+	letter-spacing: 0.02em;
+	font-weight: bold;
 	font-size: 24px;
 	font-family: 'ubuntu_monoregular';
-	font-weight: bold;
 }
+
 #container {
 	position: relative;
-	margin-bottom: 30px;
-	background-color: #273035;
-	border-radius: 5px;
+	float: left;
 	overflow: hidden;
 	margin-right: 20px;
+	margin-bottom: 30px;
 	margin-left: 20px;
 	padding-bottom: 10px;
 	width: 620px;
-	overflow: hidden;
-	float: left;
+	border-radius: 5px;
+	background-color: #273035;
 }
+
 .breadcrumbs {
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 21px;
-	font-weight: bold;
-	letter-spacing: -0.02em;
 	margin: 1.6em 0 11px;
 	padding: 0;
 	width: 437px;
+	color: #FFFFFF;
+	letter-spacing: -0.02em;
+	font-weight: bold;
+	font-size: 21px;
+	font-family: 'ubuntu_monoregular';
 }
+
 .portfolio_short_content {
 	float: left;
 	width: 580px;
 }
+
 /*
 **pre
 */
 .post .journalism-greey {
-	background: #181e21;
+	margin: 0.6em 0 2em;
 	padding: 15px 12px 13px 20px;
-	margin: 0px;
-	margin-bottom: 2em;
-	margin-top: 0.6em;
+	background: #181e21;
 }
+
 pre {
-	font-family: 'ubuntu_monoregular';
-	padding: 0px;
-	margin: 0px;
 	display: block;
-	font-size: 13px;
-	line-height: 1.6em;
-	letter-spacing: 0.07em;
-	word-spacing: 0.25em;
 	overflow: auto;
+	margin: 0;
+	padding: 0;
+	word-spacing: 0.25em;
+	letter-spacing: 0.07em;
+	font-size: 13px;
+	font-family: 'ubuntu_monoregular';
+	line-height: 1.6em;
 }
 
 /*
@@ -754,128 +861,149 @@ pre {
 */
 #sidebar {
 	float: right;
-	width: 260px;
 	margin-right: 20px;
+	width: 260px;
 }
+
 #sidebar .widget:first-child .journalism-form {
-	padding: 0px;
-	margin: 0px;
-	margin-left: -20px;
+	margin: 0 0 0 -20px;
+	padding: 0;
 }
-#sidebar .widget:first-child 
-.journalism-form .journalism-search-field {
-	background: url('images/search.png') no-repeat 209px 15px #5e6264;
-	width: 180px;
+
+#sidebar .widget:first-child .journalism-form .journalism-search-field {
 	padding-right: 61px;
+	width: 180px;
+	background: url('images/search.png') no-repeat 209px 15px #5e6264;
 }
+
 .widget {
-	background-color: #273035;
-	border-radius: 5px 5px 5px 5px;
-	clear: both;
 	display: block;
+	clear: both;
 	margin-bottom: 22px;
 	padding: 16px 20px 1.45em;
-	
+	border-radius: 5px 5px 5px 5px;
+	background-color: #273035;
+
 }
+
 .widgettitle {
-	border-bottom: 1px dashed #5E6264;
-	color: #FFFFFF;
-	font-family: 'ubuntu_monoregular';
-	font-size: 11px;
-	letter-spacing: 0.05rem;
 	margin-bottom: 25px;
 	padding-bottom: 15px;
+	border-bottom: 1px dashed #5E6264;
+	color: #FFFFFF;
 	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	font-size: 11px;
+	font-family: 'ubuntu_monoregular';
 }
+
 .widget ul {
-	padding-left: 0px;
+	padding-left: 0;
 }
+
 .widget .menu {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
+
 .widget ul li {
 	float: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	word-spacing: 0.1em;
 	letter-spacing: -0.01em;
 	line-height: 1.333em;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	word-spacing: 0.1em;
 }
+
 .widget ul li a {
-	color: #888D8F;
-	font-size: 13px;
-	font-weight: 100;
-	line-height: 2.009em;
 	margin: 0;
 	padding: 0;
+	color: #888D8F;
 	text-decoration: none;
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 2.009em;
 }
+
 .widget ul li a:hover {
 	color: #26a4d7;
 }
+
 .widget ul li ul {
-	margin: 0px;
-	padding: 0px;
-	padding-left: 15px;
+	margin: 0;
+	padding: 0 0 0 15px;
 }
+
 .widget .tagcloud a {
 	color: #3D8FD5;
 	text-decoration: none;
 }
+
 .widget table {
-	border-bottom: 1px solid #EDEDED;
-	border-collapse: collapse;
-	border-spacing: 0;
-	font-size: 14px;
-	line-height: 2;
 	margin: 0 0 20px;
 	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-bottom: 1px solid #EDEDED;
+	font-size: 14px;
+	line-height: 2;
 }
+
 .widget table tr {
 	border-bottom: 1px solid #EDEDED;
 }
+
 .widget a {
 	color: #3D8FD5;
 	text-decoration: none;
 }
+
 .widget #next {
 	text-align: right;
 }
+
 .widget table td {
 	text-align: center;
 }
+
 .widget #prev {
 	text-align: left;
 }
-.widget .recentcomments{
+
+.widget .recentcomments {
 	margin-bottom: 20px;
-	border: 1px dashed #5E6264;
 	padding: 5px;
+	border: 1px dashed #5E6264;
 }
-.widget .recentcomments .url{
+
+.widget .recentcomments .url {
 	color: #3D8FD5;
 }
-.widget .recentcomments .url:hover{
+
+.widget .recentcomments .url:hover {
 	color: #26a4d7;
 }
+
 .widget .rsswidget {
-	color: #3D8FD5;
-	line-height: 0px;
 	margin-bottom: 5px;
+	color: #3D8FD5;
+	line-height: 0;
 }
+
 .widget .rssSummary {
-	background-color: #262c2e;
-	border: 1px dashed #828789;
-	color: #FFF;
 	padding: 3px;
-}
-.widget cite {
+	border: 1px dashed #828789;
+	background-color: #262c2e;
 	color: #FFF;
+}
+
+.widget cite {
 	display: block;
 	margin-bottom: 15px;
+	color: #FFF;
 }
+
 .textwidget img {
 	max-width: 100%;
 	height: auto;
@@ -885,39 +1013,40 @@ pre {
 **search-form
 */
 .journalism-search-wrap .journalism-form {
-	padding: 0px;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 }
+
 .journalism-search-wrap .journalism-form .journalism-search-field {
 	display: block;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0 40px 1px 17px;
 	width: 165px;
 	height: 43px;
-	padding-bottom: 1px;
-	padding-left: 17px;
-	padding-right: 40px;
-	background: url('images/search.png') no-repeat 193px 15px #5e6264;
-	border: none 0px;
-	border-radius: 45px;
+	border: none 0;
 	-moz-border-radius: 3px;
-	color: #181e21!important;
-	font-size: 1em;
-	letter-spacing: 0.098rem;
+	border-radius: 45px;
+	background: url('images/search.png') no-repeat 193px 15px #5e6264;
+	color: #181e21 !important;
 	word-spacing: 0.09rem;
+	letter-spacing: 0.098rem;
+	font-size: 1em;
 }
+
 .post-text .journalism-search-wrap .journalism-form .journalism-search-field {
 	margin: 0 auto;
 }
+
 .post .journalism-search-wrap {
 	margin-left: 20px;
 }
+
 .journalism-sub {
-	background-color: transparent;
-	margin-bottom: 0px!important;
 	float: right;
-	margin-right: 1px;
 	margin-top: -41px;
+	margin-right: 1px;
+	margin-bottom: 0 !important;
+	background-color: transparent;
 	cursor: pointer;
 }
 
@@ -925,103 +1054,105 @@ pre {
 **journalism-form
 */
 .journalism-form {
+	margin: 0;
 	padding-top: 18px;
-	margin: 0px;
 }
+
 .journalism-form p {
-	padding: 0px;
-	margin: 0px;
-	padding-bottom: 1.05em;
+	clear: both;
+	margin: 0;
+	padding: 0 0 1.05em;
+	word-spacing: 0.009em;
+	letter-spacing: 0;
 	font-size: 13px;
 	line-height: 1em;
-	letter-spacing: 0em;
-	word-spacing: 0.009em;
-	clear: both;
 }
+
 .journalism-form .text {
-	border: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #5e6264;
+	position: relative;
 	margin-top: 5px;
 	margin-bottom: 9px;
-	padding: 0px;
-	padding-left: 10px;
-	padding-right: 10px;
-	height: 47px;
+	padding: 0 10px;
 	width: 201px;
-	position: relative;
-	
-}
-.journalism-form textarea {
-	position: relative;
+	height: 47px;
 	border: none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background-color: #5e6264;
-	height: 107px;
-	width: 211px;
-	max-width: 97%;
+
+}
+
+.journalism-form textarea {
+	position: relative;
 	margin-top: 5px;
 	margin-bottom: 8px;
-	padding: 0px;
-	padding-left: 10px;
+	padding: 0 0 0 10px;
+	max-width: 97%;
+	width: 211px;
+	height: 107px;
+	border: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #5e6264;
 }
 
 /*
 **select
 */
 .journalism-selectdiv {
-	cursor: pointer;
 	position: relative;
-	margin: 0px;
-	margin-top: 5px;
-	margin-bottom: 2.05em;
-	font-size: 13px;
+	margin: 5px 0 2.05em;
 	width: 220px;
 	height: 46px;
-	background: url(images/sprite.png) no-repeat scroll transparent;
-	background-position: -7px -5px;
-	color: #273035;
 	border-radius: 5px 5px 0 0;
+	background: transparent url(images/sprite.png) no-repeat scroll -7px -5px;
+	color: #273035;
+	font-size: 13px;
+	cursor: pointer;
 }
+
 .journalism-selectbox {
+	z-index: 999;
 	display: none;
+	height: 0;
 	color: #555;
 	opacity: 0;
-	z-index: 999;
-	height: 0;
 }
+
 .journalism-seltext {
-	float: left;
-	padding: 11px 27px 11px 10px; 
-	position: absolute; 
+	position: absolute;
 	top: 3px;
 	left: 1px;
+	float: left;
+	padding: 11px 27px 11px 10px;
 }
+
 .journalism-select-content-open {
 	position: absolute;
-	top: 45px; 
+	top: 45px;
+	z-index: 1000;
 	display: none;
-	width: 220px; 
+	width: 220px;
 	background: #181e21;
 	cursor: pointer;
-	z-index: 1000;
 }
+
 .journalism-sel-opt {
-	margin: 0px;
+	margin: 0;
 	padding: 4px 0 1px 30px;
+	color: #ffffff;
 	line-height: 30px;
 	cursor: pointer;
-	color: #ffffff;
 }
+
 .journalism-sel-opt-dis {
-	margin: 0px;
+	margin: 0;
+	padding: 9px 0 0 10px;
 	color: #aaa;
-	padding: 9px 0px 0px 10px;
 }
+
 .journalism-sel-opt:hover {
 	background: #26a4d7;
 	color: #ffffff;
@@ -1034,35 +1165,33 @@ pre {
 	margin-left: 28px;
 }
 
-.journalism-radio {	
-	color: #444444;
-	cursor: pointer;
+.journalism-radio {
 	display: block;
-	font-size: 13px;
-	text-indent: 4px;
-	line-height: 13px;
-	background: url(images/sprite.png) no-repeat scroll transparent;
-	background-attachment: scroll;    
-	background-position: -7px -72px;
-	margin: 0px;
-	margin-right: auto;
-	margin-bottom: 22px;
-	margin-top: -6px;
 	float: left;
+	margin: -6px auto 22px 0;
 	padding-bottom: 5px;
 	width: 27px;
-	cursor: pointer;
 	height: 15px;
+	background: transparent url(images/sprite.png) no-repeat scroll -7px -72px;
+	color: #444444;
+	text-indent: 4px;
+	font-size: 13px;
+	line-height: 13px;
+	cursor: pointer;
 }
+
 .post:first-child .journalism-radio {
 	margin-top: 10px;
 }
+
 .journalism-radio:ACTIVE, .journalism-radio.active:ACTIVE {
 	background-position: -7px -108px;
 }
+
 .journalism-radio.active {
 	background-position: -7px -107px;
 }
+
 .journalism-radio:hover {
 	background-position: -7px -143px;
 }
@@ -1072,10 +1201,9 @@ pre {
 */
 label {
 	display: block;
-	cursor: pointer;
 	margin-top: 9px;
+	cursor: pointer;
 }
-
 
 /*
 **form journalism-chek
@@ -1083,34 +1211,32 @@ label {
 .journalism-form .journalism-chek {
 	margin-left: 28px;
 }
+
 .journalism-chek {
-	color: #444444;
-	cursor: pointer;
 	display: block;
-	font-size: 13px;
-	height: 27px;
-	text-indent: -4px;
-	line-height: 18px;
-	background: url(images/sprite.png) no-repeat scroll transparent;
-	background-attachment: scroll;    
-	background-position: -40px -72px;
-	margin: 0px;
-	margin-right: auto;
-	margin-bottom: 6px;
-	margin-top: -6px;
+	float: left;
+	margin: -6px auto 6px 0;
 	padding-top: 2px;
 	padding-bottom: 6px;
 	padding-left: 7px;
 	width: 22px;
+	height: 27px;
+	background: transparent url(images/sprite.png) no-repeat scroll -40px -72px;
+	color: #444444;
+	text-indent: -4px;
+	font-size: 13px;
+	line-height: 18px;
 	cursor: pointer;
-	float: left;
 }
+
 .journalism-chek:ACTIVE, .journalism-chek.active:ACTIVE {
 	background-position: -40px -107px;
 }
+
 .journalism-chek.active {
 	background-position: -40px -107px;
 }
+
 .journalism-chek:hover {
 	background-position: -40px -143px;
 }
@@ -1119,164 +1245,179 @@ label {
 **form file input
 */
 .journalism-blok-file {
-	background-color: #181E21;
-	border-radius: 5px 5px 5px 5px;
 	clear: both;
-	height: 59px;
 	margin: 5px 0 0;
 	padding-top: 11px;
 	width: 460px;
+	height: 59px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #181E21;
 }
+
 .journalism-text-file {
-	margin: 0px;
-	color: #181e21;
-	cursor: pointer;
-	padding: 17px 34px 17px 9px;
-	margin: -1.8em 0 0;
 	display: block;
+	margin: -1.8em 0 0;
+	padding: 17px 34px 17px 9px;
+	color: #181e21;
 	font-size: 13px;
+	cursor: pointer;
 }
+
 .journalism-file-text {
 	display: block;
 	float: left;
-	padding-left: 16px;
 	padding-top: 23px;
+	padding-left: 16px;
 	width: 178px;
 	letter-spacing: -0.01rem;
 }
+
 .journalism-file {
-	padding: 0px;
-	margin: 0px;
-	margin-left: 10px;
-	padding-bottom: 30px;
-	overflow: hidden;
-	cursor: pointer;
 	float: left;
+	overflow: hidden;
+	margin: 0 0 0 10px;
+	padding: 0 0 30px;
 	width: 224px;
 	height: 20px;
 	border: none;
-	background: none;
-	background: url(images/sprite.png) no-repeat scroll transparent;
-	background-position: -8px -183px;
-}
-.journalism-file input {
+	background: transparent url(images/sprite.png) no-repeat scroll -8px -183px;
 	cursor: pointer;
-	padding: 0px;
-	margin: 0px;
+}
+
+.journalism-file input {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
 }
 
 /*
 **form bottom
 */
 .journalism-cler {
-	border: none;
-	background: none;
-	font-weight: bold;
-	font-family: 'ubuntu_monoregular';
-	font-size: 13px;
+	position: relative;
 	float: left;
 	padding: 0 16px;
 	height: 36px;
-	background-color: #b3babd;
-	color: #273035;
+	border: none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	position: relative;
+	background: #b3babd none;
+	color: #273035;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: 'ubuntu_monoregular';
 	cursor: pointer;
 }
+
 .journalism-cler:hover {
-	color: #ffffff;
 	background-color: #3d8fd5;
+	color: #ffffff;
 }
+
 .journalism-submit {
-	margin-left: 10px;
+	position: relative;
 	margin-bottom: 18px;
-	border: none;
-	background: none;
-	font-weight: bold;
-	font-family: 'ubuntu_monoregular';
-	font-size: 13px;
+	margin-left: 10px;
 	padding: 0 18px;
 	height: 36px;
-	background-color: #b3babd;
-	color: #273035;
-	cursor: pointer;
+	border: none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	border-radius: 3px; 
-	position: relative;
-	
+	border-radius: 3px;
+	background: #b3babd none;
+	color: #273035;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: 'ubuntu_monoregular';
+	cursor: pointer;
+
 }
+
 .journalism-submit:hover {
-	color: #ffffff;
 	background-color: #3d8fd5;
+	color: #ffffff;
 }
+
 #submit {
-	margin: 0px;
+	margin: 0;
 }
 
 /*
 **comments
 */
 #comments {
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
+
 .commentlist {
-	padding-left: 0px;
-	margin-top: 0px;
+	margin-top: 0;
+	padding-left: 0;
 }
+
 .comment .edit-link {
 	float: left;
+	padding-bottom: 0;
 	padding-left: 10px;
-	padding-bottom: 0px;
 }
+
 .reply {
 	float: right;
 	padding-right: 10px;
 }
+
 .avatar {
 	float: left;
 	padding-right: 10px;
 }
+
 .comment {
-	border: 1px solid #181E21;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	min-width: 338px;
+	border: 1px solid #181E21;
 }
+
 .comment-author {
 	clear: both;
 	padding-bottom: 22px;
 }
-.comment-content{
+
+.comment-content {
 	padding: 10px;
 }
+
 #comments ol ul {
 	margin-left: 10px;
 }
+
 #comments ol ul li {
-	padding-left: 0px;
+	padding-left: 0;
 }
+
 .comment-content ol {
 	padding-left: 45px;
 }
+
 .comment-content ol ol {
 	padding-left: 20px;
 }
+
 #respond label {
-	height: 30px;
-	width: 100%;
 	float: left;
 	clear: both;
+	width: 100%;
+	height: 30px;
 }
+
 .comment header {
-	padding: 0px;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 }
+
 .comment footer {
-	padding: 0px;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -1287,22 +1428,25 @@ label {
 **footer
 */
 .footer {
+	margin-top: 60px;
+	padding-top: 20px;
+	padding-bottom: 34px;
 	width: 100%;
 	height: 43px;
 	background-color: #181e21;
-	padding-bottom: 34px;
-	padding-top: 20px;
-	margin-top: 60px;
 }
+
 .journalism-footer_right {
 	float: right;
 }
+
 .journalism-footer_right a {
+	color: #3d8fd5;
 	text-decoration: none;
 	font-size: 13px;
 	font-family: 'ubuntu_monoregular';
-	color: #3d8fd5;
 }
+
 .clear {
 	clear: both;
 }
@@ -1314,67 +1458,110 @@ label {
 	display: block;
 	padding-bottom: 20px;
 }
+
 .leave-reply {
 	float: right;
 }
-.journalism-nav{
+
+.journalism-nav {
 	padding-bottom: 30px;
 }
+
 .nav-previous {
 	display: block;
 	float: left;
-	max-width: 300px;
 	padding-bottom: 20px;
+	max-width: 300px;
 }
+
 .nav-previous a {
 	text-decoration: underline;
 }
+
 .nav-next {
 	float: right;
+	padding-bottom: 20px;
 	max-width: 300px;
 	text-align: right;
-	padding-bottom: 20px;
 }
+
 .nav-next a {
 	text-decoration: underline;
 }
+
 .depth-1 {
-	border: 1px solid #ddd;
 	margin-bottom: 10px;
+	border: 1px solid #ddd;
 }
+
 .sticky {
-	background-color: #262c2e;
-	padding: 0px;
 	margin-bottom: 32px;
+	padding: 0;
+	background-color: #262c2e;
 }
+
 .gallery-caption {
 	color: #666;
-	font-family: Georgia, serif;
 	font-size: 13px;
+	font-family: Georgia, serif;
 }
+
 .alignleft {
 	display: inline;
 	float: left;
 	margin-right: 1.625em;
 }
+
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.625em;
 }
+
 .aligncenter {
+	display: block;
 	clear: both;
-	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
+
 .entry-title-archive {
-	color: #ffffff;
-	padding-bottom: 20px;
-	padding-top: 10px;
-	border-bottom: 1px dashed #dddddd;
 	display: block;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #dddddd;
+	color: #ffffff;
 }
+
 .bypostauthor {
 	color: #ffffff;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }

@@ -1,20 +1,21 @@
 === Journalism ===
-Contributors: the BestWebSoft team
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: gray,  two-columns, left-sidebar,  fixed-layout,  custom-background,  custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, translation-ready
-Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 1.0.9
-Journalism WordPress theme, Copyright (C) 2013 BestWebSoft
-Journalism WordPress theme is licensed under the GPL v3
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, sticky-post, translation-ready
+Requires at least: 3.9
+Tested up to: 4.5.2
+Stable tag: 1.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+Journalism WordPress theme, Copyright 2016 BestWebLayout.com
+Theme Journalism is distributed under the terms of the GNU GPL
 
 The Journalism theme for WordPress is a simple solution to customize your website.
 
 == Description ==
 
-Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and imporve the fucntionality accordingly. The demo version of this theme can be found at http://bestwebsoft.com/wordpress_demo_theme/journalism/
+Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and imporve the fucntionality accordingly. The demo version of this theme can be found at http://wp-demo-theme.bestweblayout.com/journalism/
 
 = Copyrights for Resources used in this theme =
 
@@ -25,14 +26,14 @@ Journalism is a simple and professional theme with loads of customization option
    - html5.js which are under under MIT and GPL2 Licenses Version 2
    - jquery.slides.min.js which are under MIT and GPL licenses Version 2
    - pie.htc which are under the Apache License Version 2.0 and GPL Version 2.
-3. Everything else used in this theme has been created by the Bestwebsoft team,
+3. Everything else used in this theme has been created by the BestWebLayout team,
    especially for Journalism theme and is distributed under GPL license.
 
 = Translation =
 
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 == Installation ==
 
@@ -54,9 +55,10 @@ Installation using "Add New Theme":
 = Slider =
 
 For the slider you need to complete the following 3 steps:
-You need to go into your notes and open the note which you want to see in the slider.
-Then you should set a checkmark in the checkbox and select the thumbnail for the post.
-Then just update your post.( for featured images of slider we recommend you using the proportions 900x218px (width/height) ).
+1. Go to Dashboard > Posts, open a post, which you want to see in the slider, in the edit mode.
+2. Set a checkmark in the checkbox (on the right side of the screen) and select the featured image for the post.
+3. Update your post.
+We recommend you to use the proportions 900x218px (width/height) for images which you want to add to the slider.
 
 = Featured Images =
 
@@ -92,6 +94,16 @@ You can use our contact form for any support questions: http://bestwebsoft.com/c
 
 == Changelog ==
 
+= v1.1 - 07.06.2016 =
+* New:    The 'title-tag' theme support was added.
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme styles.
+* Bugfix: Comments was added to pages.
+* Bugfix: Sliders functionality was fixed.
+* Update: Screenshot was updated to size 1200x900.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.2.
+* Update: Theme was transferred to new WordPress account.
+
 = 1.0.9 - 30.07.2014 =
 * Update: We updated all functionality for wordpress 3.9.1. 
 * New: We added journalism.pot file. 
@@ -124,6 +136,9 @@ Changes to style.css to style tag cloud widget and to correct display of very lo
 Displaying of the comment form was fixed.
 
 == Upgrade Notice ==
+
+= 1.1 =
+The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Comments was added to pages. Sliders functionality was fixed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
 
 = 1.0.9 =
 We updated all functionality for wordpress 3.9.1. We added journalism.pot file. We fixed bugs in script.js.

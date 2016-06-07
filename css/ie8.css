@@ -1,22 +1,44 @@
 /*
 **ie8
 */
+#ie8 .journalism-carcas,
+#ie8 .journalism-top-menu,
+#ie8 #slides,
+#ie8 .slidesjs-pagination li a,
+#ie8 .slidesjs-container,
+#ie8 .post img,
+#ie8 .post,
+#ie8 .post .featured-image,
+#ie8 .post .featured-image img,
+#ie8 .journalism-title,
+#ie8 #container,
+#ie8 .widget,
+#ie8 #sidebar .widget:first-child .journalism-form,
+#ie8 .journalism-search-wrap .journalism-form .journalism-search-field,
+#ie8 .journalism-sub,
+#ie8 .journalism-form .text,
+#ie8 .journalism-form textarea,
+#ie8 .journalism-cler,
+#ie8 .journalism-submit,
+#ie8 .footer {
+	behavior: url('../js/PIE.htc');
+}
+
 #ie8 img {
 	width: inherit;
 }
 #ie8 .post dl {
-	padding-top: 0px;
+	padding-top: 0;
 }
 #ie8 .post dl h4 {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 #ie8 .header-menu li a{
 	word-spacing: -1.5px;
 	text-transform: uppercase;
 	font-size: 13px;
 	text-decoration: none;
-	padding: 0px;
 	color: #ffffff;
 	letter-spacing: 0.019em;
 	display: block;
@@ -58,15 +80,12 @@
 }
 #ie8 .journalism-search-wrap .journalism-form .journalism-search-field {
 	display: block;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
 	width: 180px;
 	height: 28px;
-	padding-top: 15px;
-	padding-left: 17px;
-	padding-right: 61px;
-	background: url( images/search.png ) no-repeat 209px 15px #5e6264;
-	border: none 0px;
+	padding: 15px 61px 0 17px;
+	background: url( ../images/search.png ) no-repeat 209px 15px #5e6264;
+	border: none 0;
 	border-radius: 45px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

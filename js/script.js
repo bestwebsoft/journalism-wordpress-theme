@@ -37,10 +37,10 @@
 /*
 **search
 */
-		$( '.journalism-search-field' ).val( search );
+		$( '.journalism-search-field' ).val( journalismScriptVars['search'] );
 		$( '.journalism-search-field' ).on( 'blur', function( e ){
 			if( $( '.journalism-sub' ).data( 'mouseDown' ) != true ){
-				$( '.journalism-search-field' ).val( search );
+				$( '.journalism-search-field' ).val( journalismScriptVars[ 'search' ] );
 			}
 		});
 		$( '.journalism-sub' ).on( 'mousedown', function( e ){
