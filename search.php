@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 <div id="content">
-	<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : $i = 0; ?>
 		<div class="journalism-title">
 			<h1>
 				<?php printf( __( 'Search Results for: %s', 'journalism' ), '<span>' . get_search_query() . '</span>' ); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php /* post navigation */
 		do_action( 'journalism_wp_link_pages' );
 		while ( have_posts() ) : the_post();
-			$i = 0; /*start the loop*/ ?>
+			$i ++; /*start the loop*/ ?>
 			<div class="post"><!-- div .post -->
 				<div class="journalism-post-carcas">
 					<header>
@@ -29,12 +29,12 @@ get_header(); ?>
 						</h2><!-- tags .entry-title -->
 						<div class="post-data">
 							<article>
-								<?php _e( 'Posted on', 'journalism' );
-								/*Link to the archive page*/
-								$archive_year  = get_the_date( 'Y' );
-								$archive_month = get_the_date( 'm' ); ?>
-								<a href="<?php echo esc_url( get_month_link( $archive_year, $archive_month ) ); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php echo get_the_date(); ?></a>
-								<?php _e( 'in', 'journalism' ); ?>&nbsp<?php the_category( ', ' ); ?>
+								<?php _e( 'Posted on', 'journalism' ); ?>
+								<a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+								<?php if ( has_category() ) {
+									echo __( 'in', 'journalism' ) . '&nbsp';
+									the_category( ', ' );
+								} ?>
 							</article>
 						</div><!-- div .post-data -->
 					</header>
@@ -44,13 +44,15 @@ get_header(); ?>
 					<?php wp_link_pages(); ?>
 					<hr />
 					<footer>
-						<div class="post-tag">
-							<?php the_tags( '&nbsp;' ); ?>
-						</div><!-- div .post-tag -->
-						<?php edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
-						<?php if ( $i >= 2 ) : ?>
+						<?php if ( has_tag() ) { ?>
+							<div class="post-tag"><!-- div .post-tag -->
+								<?php the_tags( '&nbsp;' ); ?>
+							</div><!-- div .post-tag -->
+						<?php }
+						if ( $i >= 2 ) : ?>
 							<a class='journalism-top' href="javascript:scroll(0,0);"><?php _e( '[Top]', 'journalism' ); ?></a>
-						<?php endif ?>
+						<?php endif;
+						edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer>
 				</div><!-- div .journalism-post-carcas -->
 			</div><!-- div .post -->

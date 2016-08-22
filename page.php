@@ -24,8 +24,9 @@ get_header(); ?>
 						</h2><!-- tags .entry-title -->
 					</header>
 					<div class="post-text">
-						<?php the_content( 'ALL TEXT' ); // the_excerpt('ALL TEXT'); Reduced output content!!!!!!?>
+						<?php the_content(); ?>
 					</div><!-- div .post-text -->
+					<?php wp_link_pages(); ?>
 					<div class="clear"></div>
 					<footer>
 						<?php edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>

@@ -4,7 +4,7 @@ Theme URI: http://bestweblayout.com/products/journalism/
 Author: BestWebLayout
 Author URI: http://bestweblayout.com/
 Description: Journalism is a simple and professional theme with loads of customization options that do not require special web experience. It manages to display everything in a readable and clear manner. If you have been searching for a Magazine-style and feature-rich theme for your website, then look no further! If you are a blogger looking to give your visitors a fun new way to browse your latest posts or you are an artist looking to showcase your latest work, then Journalism is a great choice for you! It is easy to use and configure, and offers integration options with all plugins developed by BestWebSoft IT company. Among others, Facebook Like Button (http://wordpress.org/plugins/facebook-button-plugin/) and Twitter (http://wordpress.org/plugins/twitter-plugin/) plugins will grasp the idea behind your website most precisely, and improve the functionality accordingly. The demo version of this theme can be found at http://wp-demo-theme.bestweblayout.com/journalism/
-Version: 1.1
+Version: 1.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, sticky-post, translation-ready
@@ -318,6 +318,15 @@ blockquote p {
 .header-menu .current_page_ancestor > a {
 	padding: 1.7em 1.5em 1.7em 1.8em;
 	background-color: #26a4d7;
+}
+
+.header-menu .menu-item-has-children > a::after {
+	content: ' \025BE';
+}
+
+.header-menu .sub-menu .menu-item-has-children > a::after {
+	content: '\025B8';
+	float: right;
 }
 
 /*
@@ -865,15 +874,16 @@ pre {
 	width: 260px;
 }
 
-#sidebar .widget:first-child .journalism-form {
-	margin: 0 0 0 -20px;
+#sidebar .widget .journalism-form {
+	margin: 0 -20px;
 	padding: 0;
 }
 
-#sidebar .widget:first-child .journalism-form .journalism-search-field {
-	padding-right: 61px;
-	width: 180px;
-	background: url('images/search.png') no-repeat 209px 15px #5e6264;
+#sidebar .widget .journalism-form .journalism-search-field {
+	padding-right: 41px;
+	width: 260px;
+	background: url('images/search.png') no-repeat 234px center #5e6264;
+	box-sizing: border-box;
 }
 
 .widget {
@@ -1020,13 +1030,13 @@ pre {
 .journalism-search-wrap .journalism-form .journalism-search-field {
 	display: block;
 	margin: 0;
-	padding: 0 40px 1px 17px;
-	width: 165px;
+	padding: 0 41px 1px 17px;
+	width: 260px;
 	height: 43px;
 	border: none 0;
 	-moz-border-radius: 3px;
 	border-radius: 45px;
-	background: url('images/search.png') no-repeat 193px 15px #5e6264;
+	background: url('images/search.png') no-repeat 234px center #5e6264;
 	color: #181e21 !important;
 	word-spacing: 0.09rem;
 	letter-spacing: 0.098rem;
@@ -1139,10 +1149,18 @@ pre {
 	cursor: pointer;
 }
 
+.journalism-sel-optgroup {
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	padding: 4px 0 1px;
+	font-weight: bold;
+}
+
 .journalism-sel-opt {
 	margin: 0;
 	padding: 4px 0 1px 30px;
-	color: #ffffff;
+	color: #fff;
 	line-height: 30px;
 	cursor: pointer;
 }
@@ -1155,7 +1173,7 @@ pre {
 
 .journalism-sel-opt:hover {
 	background: #26a4d7;
-	color: #ffffff;
+	color: #fff;
 }
 
 /*
@@ -1256,8 +1274,8 @@ label {
 
 .journalism-text-file {
 	display: block;
-	margin: -1.8em 0 0;
-	padding: 17px 34px 17px 9px;
+	margin: -21px 0 0;
+	padding: 18px 34px 17px 9px;
 	color: #181e21;
 	font-size: 13px;
 	cursor: pointer;
@@ -1266,7 +1284,7 @@ label {
 .journalism-file-text {
 	display: block;
 	float: left;
-	padding-top: 23px;
+	padding-top: 18px;
 	padding-left: 16px;
 	width: 178px;
 	letter-spacing: -0.01rem;
@@ -1276,9 +1294,9 @@ label {
 	float: left;
 	overflow: hidden;
 	margin: 0 0 0 10px;
-	padding: 0 0 30px;
+	padding: 0;
 	width: 224px;
-	height: 20px;
+	height: 48px;
 	border: none;
 	background: transparent url(images/sprite.png) no-repeat scroll -8px -183px;
 	cursor: pointer;

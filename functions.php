@@ -52,48 +52,6 @@ function journalism_setup() {
 }
 
 /*
-**title
-*/
-/* backwards compatibility title-tag */
-if ( ! function_exists( '_wp_render_title_tag' ) ) {
-	/* customize title if WP version < 4.1 */
-	function journalism_wp_title( $title, $sep = '|' ) {
-		global $page, $paged;
-
-		if ( is_feed() ) {
-			return $title;
-		}
-
-		/* Add the blog name */
-		$title = get_bloginfo( 'name' ) . $title;
-
-		/* Add the blog description for the home/front page. */
-		$site_description = get_bloginfo( 'description', 'display' );
-		if ( $site_description && ( is_home() || is_front_page() ) ) {
-			$title = "$title $sep $site_description";
-		}
-
-		/* Add a page number if necessary: */
-		if ( $paged >= 2 || $page >= 2 ) {
-			$title = "$title $sep " . sprintf( __( 'Page %s', 'journalism' ), max( $paged, $page ) );
-		}
-
-		return $title;
-	}
-
-	/* add wp_title filter if WP version < 4.1 */
-	add_filter( 'wp_title', 'journalism_wp_title' );
-
-	/* render title in wp_head if WP version < 4.1 */
-	function journalism_render_title() { ?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-	<?php }
-
-	add_action( 'wp_head', 'journalism_render_title' );
-}
-/* end backwards compatibility */
-
-/*
 **including the javascript and css of the theme
 */
 function journalism_scripts() {
@@ -111,12 +69,17 @@ function journalism_scripts() {
 	wp_enqueue_style( 'journalism-style-ie8', get_template_directory_uri() . '/css/ie8.css' );
 	wp_style_add_data( 'journalism-style-ie8', 'conditional', 'IE 8' );
 
+	wp_enqueue_script( 'journalism-html5', get_template_directory_uri() . '/js/html5.js' );
+	wp_script_add_data( 'journalism-html5', 'conditional', 'lt IE 9' );
+
 	wp_enqueue_script( 'journalism-script-slides', get_template_directory_uri() . '/js/jquery.slides.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'journalism-script', get_template_directory_uri() . '/js/script.js', array( 'jquery' ) );
-	$script_vars = array(
-		'search' => __( 'Enter search keyword', 'journalism' ),
+	$string_js = array(
+		'chooseFile' => __( 'Choose file...', 'journalism' ),
+		'fileNotSel' => __( 'File is not selected.', 'journalism' ),
+		'fileSel'    => __( 'File Selected', 'journalism' ),
 	);
-	wp_localize_script( 'journalism-script', 'journalismScriptVars', $script_vars );
+	wp_localize_script( 'journalism-script', 'journalismStringJs', $string_js );
 }
 
 /*
@@ -190,8 +153,8 @@ function journalism_metabox_callback() {
 		$check = 'checked';
 	}
 	echo __( 'If you want to add this post in slider, choose the checkbox &nbsp ', 'journalism' ) .
-			 '<form action = "" method = "post">' .
-			 '<input type = "checkbox" name = "addToSlider" ' . $check . ' >' .
+			 '<form action="" method="post">' .
+			 '<input type="checkbox" name="addToSlider" ' . $check . ' >' .
 			 '</form>';
 }
 
@@ -270,7 +233,7 @@ function journalism_comment( $comment, $args, $depth ) {
 							}
 							echo get_avatar( $comment, $avatar_size );
 							/* translators: 1: comment author, 2: date and time */
-							printf( '%1$s' . __( 'on ', 'journalism' ) . '%2$s <span class="says">' . __( 'said:', 'journalism' ) . '</span>',
+							printf( '%1$s' . __( 'on', 'journalism' ) . ' %2$s <span class="says">' . __( 'said:', 'journalism' ) . '</span>',
 								sprintf( '<span class="fn">%s</span> <br />', get_comment_author_link() ),
 								sprintf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
 									esc_url( get_comment_link( $comment->comment_ID ) ),

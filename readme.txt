@@ -1,11 +1,12 @@
 === Journalism ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Author URI: http://bestweblayout.com/
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, sticky-post, translation-ready
-Requires at least: 3.9
-Tested up to: 4.5.2
-Stable tag: 1.1
+Requires at least: 4.3
+Tested up to: 4.6
+Stable tag: 1.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Journalism WordPress theme, Copyright 2016 BestWebLayout.com
@@ -78,7 +79,7 @@ You can use the custom header image the following way: from your Admin UI (Dashb
 
 = How can I switch the language from English to Russian? =
 
-In the main catalog of your WordPress site find file wp-config.php, open it and change define (‘WPLANG’); to define (‘WPLANG’, ‘ru_RU’);
+Change the language in the admin settings screen. Settings > General > Site Language.
 
 = How to display Sliding image gallery? =
 
@@ -94,7 +95,10 @@ You can use our contact form for any support questions: http://bestwebsoft.com/c
 
 == Changelog ==
 
-= v1.1 - 07.06.2016 =
+= V1.2 - 22.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
+= V1.1 - 07.06.2016 =
 * New:    The 'title-tag' theme support was added.
 * Bugfix: Fixed mismatch coding standards.
 * Bugfix: Fixed theme styles.
@@ -104,65 +108,68 @@ You can use our contact form for any support questions: http://bestwebsoft.com/c
 * Update: The theme has been tested for the compatibility with WordPress v.4.5.2.
 * Update: Theme was transferred to new WordPress account.
 
-= 1.0.9 - 30.07.2014 =
+= V1.0.9 - 30.07.2014 =
 * Update: We updated all functionality for wordpress 3.9.1. 
 * New: We added journalism.pot file. 
 * Bugfix: We fixed bugs in script.js.
 
-= 1.0.8 - 11.02.2014 =
+= V1.0.8 - 11.02.2014 =
 * Budfix : We renamed `add_to_slider` custom post meta data.
 
-= 1.0.7 - 08.01.2014 =
+= V1.0.7 - 08.01.2014 =
 * Update: The theme's license was changed to GNU General Public License v3.
 * Update: Footer Credit Link was changed.
 * Budfix: We fixed the bug of the Newer Posts links in Archives.
 
-= 1.0.6 - 05.12.2013 =
+= V1.0.6 - 05.12.2013 =
 We changed functional of slider displaying.
  
-= 1.0.5 - 21.11.2013 =
+= V1.0.5 - 21.11.2013 =
 The function for changing the style of the logo was added in function.php file.
 
-= 1.0.4 - 20.11.2013 =
+= V1.0.4 - 20.11.2013 =
 The function for correct displaying the theme in IE7-8 was added in function.php file.
 
-= 1.0.3 - 18.11.2013 =
+= V1.0.3 - 18.11.2013 =
 We added license information for some components(fonts,scripts), used in the theme in 'readme.txt' file.
 
-= 1.0.2 - 15.11.2013 =
+= V1.0.2 - 15.11.2013 =
 Changes to style.css to style tag cloud widget and to correct display of very long titles of posts and pages were implemented.
 
-= 1.0.1 - 12.11.2013 =
+= V1.0.1 - 12.11.2013 =
 Displaying of the comment form was fixed.
 
 == Upgrade Notice ==
 
-= 1.1 =
+= V1.2 =
+* The compatibility with new WordPress version updated.
+
+= V1.1 =
 The 'title-tag' theme support was added. Fixed mismatch coding standards. Fixed theme styles. Comments was added to pages. Sliders functionality was fixed. Screenshot was updated to size 1200x900. The theme has been tested for the compatibility with WordPress v.4.5.2. Theme was transferred to new WordPress account.
 
-= 1.0.9 =
+= V1.0.9 =
 We updated all functionality for wordpress 3.9.1. We added journalism.pot file. We fixed bugs in script.js.
 
-= 1.0.8 =
+= V1.0.8 =
 We renamed `add_to_slider` custom post meta data.
 
-= 1.0.7 =
+= V1.0.7 =
 The theme's license was changed to GNU General Public License v3. Footer Credit Link is changed. We fixed the bug of the Newer Posts links in Archives.
 
-= 1.0.6 =
+= V1.0.6 =
 We changed functionality of slider displaying.
 
-= 1.0.5 =
+= V1.0.5 =
 The function for changing the style of the logo was added in the function.php file.
 
-= 1.0.4 =
+= V1.0.4 =
 The function for correct displaying the theme in IE7-8 was added in the function.php file.
 
-= 1.0.3 =
+= V1.0.3 =
 We added the license information for some components(fonts,scripts), used in the theme in 'readme.txt' file.
 
-= 1.0.2 =
+= V1.0.2 =
 Changes to style.css to style tag cloud widget and to correct display of very long titles of posts and pages were implemented.
 
-= 1.0.1 =
+= V1.0.1 =
 Displaying of the comment form was fixed.

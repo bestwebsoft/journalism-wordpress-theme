@@ -1,279 +1,208 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: journalism\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-07 17:47+0300\n"
+"Project-Id-Version: Journalism v1.2\n"
+"POT-Creation-Date: 2016-08-22 16:18+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: BestWebSoft <info@bestwebsoft.com>\n"
-"Language-Team: \n"
-"Language: ru\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : ((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
 "X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:13
-#, fuzzy
 msgid "Page Not Found ERROR 404"
-msgstr "Страница не найдена Ошибка 404"
+msgstr ""
 
 #: 404.php:16
-#, fuzzy
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
-msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно поиск по сайту или одна из ссылок смогут помочь."
+msgstr ""
 
-#: 404.php:22 search.php:74
-#, fuzzy
+#: 404.php:22 search.php:76
 msgid "Most Used Categories"
-msgstr "Часто используемые категории"
+msgstr ""
 
-#: archive.php:14
-#, fuzzy, php-format
-msgid "Daily Archives: %s"
-msgstr "Архив за день: %s"
-
-#: archive.php:16
-#, fuzzy, php-format
-msgid "Monthly Archives: %s"
-msgstr "Архив за месяц:%s"
-
-#: archive.php:18
-#, fuzzy, php-format
-msgid "Yearly Archives: %s"
-msgstr "Архив за год: %s"
-
-#: archive.php:20
-#, fuzzy, php-format
-msgid "Tag Archives: %s"
-msgstr "Архив метки: %s"
-
-#: archive.php:22 category.php:13
-#, fuzzy, php-format
-msgid "Category Archives: %s"
-msgstr "Архив Категории: %s"
-
-#: archive.php:24
-#, fuzzy, php-format
-msgid "Author&#8217;s Archive: %s"
-msgstr "Архив автора: %s"
-
-#: archive.php:26 sidebar.php:43
-#, fuzzy
-msgid "Archives"
-msgstr "Архивы"
-
-#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
-#, fuzzy
+#: archive.php:32 index.php:27 search.php:25
 msgid "Leave a reply"
-msgstr "Написать комментарий"
+msgstr ""
 
-#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
-#, fuzzy
+#: archive.php:32 index.php:27 search.php:25
 msgid "1 Reply"
-msgstr "1 Комментарий"
+msgstr ""
 
-#: archive.php:46 category.php:32 index.php:25 search.php:25
-#, fuzzy
+#: archive.php:32 search.php:25
 msgid "% Replies"
-msgstr "% Коментариев"
+msgstr ""
 
-#: archive.php:52 category.php:39 image.php:19 index.php:32 index.php:75
-#: search.php:32 single.php:27
-#, fuzzy
+#: archive.php:38 image.php:19 index.php:34 search.php:32 single.php:27
 msgid "Posted on"
-msgstr "Опубликовано"
+msgstr ""
 
-#: archive.php:57 category.php:43 image.php:19 index.php:37 index.php:79
-#: search.php:37 single.php:32
+#: archive.php:41 image.php:19 index.php:37 search.php:35 single.php:30
 msgid "in"
 msgstr ""
 
-#: archive.php:71 category.php:57 index.php:93 search.php:52
-#, fuzzy
+#: archive.php:59 index.php:55 search.php:53
 msgid "[Top]"
-msgstr "[Вверх]"
+msgstr ""
 
-#: archive.php:73 category.php:59 functions.php:259 functions.php:294
-#: image.php:82 index.php:49 index.php:95 page.php:31 search.php:50
-#: single.php:48
-#, fuzzy
+#: archive.php:61 functions.php:222 functions.php:257 image.php:82 index.php:57 page.php:32 search.php:55 single.php:50
 msgid "Edit"
-msgstr "Редактировать"
+msgstr ""
 
-#: archive.php:80 category.php:66 search.php:68
-#, fuzzy
+#: archive.php:68 search.php:70
 msgid "Nothing Found"
-msgstr "Ничего не найдено"
+msgstr ""
 
-#: archive.php:83 category.php:68
-#, fuzzy
+#: archive.php:71
 msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
-msgstr "Извините но ничего не найдено для запрошенного архива. Возможно поиск поможет найти похожую запись."
+msgstr ""
 
 #: comments.php:10
-#, fuzzy
 msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Это сообщение защищено паролем. Введите пароль для просмотра комментариев."
+msgstr ""
+
+#: comments.php:16
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
 
 #: comments.php:20 comments.php:30
-#, fuzzy
 msgid "&larr; Older Comments"
-msgstr "&larr; Предыдущие Комментарии"
+msgstr ""
 
 #: comments.php:21 comments.php:31
-#, fuzzy
 msgid "Newer Comments &rarr;"
-msgstr "Следующие комментарии &rarr;"
+msgstr ""
 
 #: comments.php:39
-#, fuzzy
 msgid "Comments are closed."
-msgstr "Комментарии запрещены"
+msgstr ""
 
 #: footer.php:14
-#, fuzzy
 msgid "Powered by"
-msgstr "Создано"
+msgstr ""
 
 #: footer.php:15
 msgid "and"
 msgstr ""
 
 #: functions.php:11
-#, fuzzy
 msgid "Widget Area"
-msgstr "Область виджетов"
+msgstr ""
 
 #: functions.php:13
-#, fuzzy
 msgid "Add widgets here to appear in your sidebar."
-msgstr "Добавьте сюда виджеты для показа в боковой колонке."
+msgstr ""
 
 #: functions.php:27
-#, fuzzy
 msgid "Primary Navigation"
-msgstr "Меню навигации"
+msgstr ""
 
 #: functions.php:78
-#, fuzzy, php-format
-msgid "Page %s"
-msgstr "Страница:%s"
-
-#: functions.php:117
-#, fuzzy
-msgid "Enter search keyword"
-msgstr "Введите слово"
-
-#: functions.php:139
-#, fuzzy
-msgid "Older posts"
-msgstr "Предыдущая страница"
-
-#: functions.php:140
-#, fuzzy
-msgid "Newer posts"
-msgstr "Следующая страница"
-
-#: functions.php:192
-#, fuzzy
-msgid "If you want to add this post in slider, choose the checkbox &nbsp "
-msgstr "Если вы хотите добавить этот пост в слайдер, установите галочку в чекбокс"
-
-#: functions.php:257
-#, fuzzy
-msgid "Pingback:"
-msgstr "Уведомление:"
-
-#: functions.php:273
-msgid "on "
+msgid "Choose file..."
 msgstr ""
 
-#: functions.php:273
-#, fuzzy
+#: functions.php:79
+msgid "File is not selected."
+msgstr ""
+
+#: functions.php:80
+msgid "File Selected"
+msgstr ""
+
+#: functions.php:102
+msgid "Older posts"
+msgstr ""
+
+#: functions.php:103
+msgid "Newer posts"
+msgstr ""
+
+#: functions.php:155
+msgid "If you want to add this post in slider, choose the checkbox &nbsp "
+msgstr ""
+
+#: functions.php:220
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:236
+msgid "on"
+msgstr ""
+
+#: functions.php:236
 msgid "said:"
-msgstr "написал:"
+msgstr ""
 
-#: functions.php:279
-#, fuzzy, php-format
+#: functions.php:242
+#, php-format
 msgid "%1$s at %2$s"
-msgstr "%1$s в %2$s"
+msgstr ""
 
-#: functions.php:284
-#, fuzzy
+#: functions.php:247
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает модерации."
+msgstr ""
 
-#: functions.php:297
-#, fuzzy
+#: functions.php:260
 msgid "Reply"
-msgstr "Ответить"
+msgstr ""
 
-#: header.php:52
-#, fuzzy
+#: header.php:51
 msgid "You have JavaScript disabled..."
-msgstr "У Вас отключён  JavaScript..."
+msgstr ""
 
 #: image.php:27
-#, fuzzy
 msgid "See in full size: "
-msgstr "Посмотреть полноразмерное  изображение:"
-
-#: image.php:28
-#, fuzzy
-msgid "full size of "
-msgstr "Полноразмерное  изображение "
-
-#: image.php:30
-#, fuzzy
-msgid "px"
-msgstr "пикс"
-
-#: image.php:32
-#, fuzzy
-msgid "Next image &rarr;"
-msgstr "Следующее изображение &rarr;"
-
-#: image.php:33
-#, fuzzy
-msgid "&larr; Previous image"
-msgstr "&larr; Предыдущее изображение."
-
-#: image.php:73
-#, fuzzy
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: search.php:13 search.php:63
-#, fuzzy, php-format
-msgid "Search Results for: %s"
-msgstr "Результаты поиска для: %s"
-
-#: search.php:69
-#, fuzzy
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
-msgstr "Жаль, но ничто не соответствует критериям  Вашего поиска. Пожалуйста, попробуйте еще раз с другими ключевыми словами."
-
-#: sidebar.php:17
-#, fuzzy
-msgid "Recent Posts"
-msgstr "Свежие Записи"
-
-#: sidebar.php:28
-msgid "Look"
 msgstr ""
 
-#: sidebar.php:34
-#, fuzzy
-msgid "Recent Comments"
-msgstr "Свежие комментарии"
+#: image.php:28
+msgid "full size of "
+msgstr ""
 
-#: sidebar.php:49
-#, fuzzy
-msgid "Catigories"
-msgstr "Категории"
+#: image.php:30
+msgid "px"
+msgstr ""
+
+#: image.php:32
+msgid "Next image &rarr;"
+msgstr ""
+
+#: image.php:33
+msgid "&larr; Previous image"
+msgstr ""
+
+#: image.php:73
+msgid "Pages:"
+msgstr ""
+
+#: index.php:27
+msgid "% Reply"
+msgid_plural "% Replies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:13 search.php:65
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:71
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: searchform.php:11
+msgid "Enter search keyword"
+msgstr ""

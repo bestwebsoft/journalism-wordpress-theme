@@ -24,17 +24,17 @@ get_header(); ?>
 						</h2><!-- tags .entry-title -->
 						<div class="post-data">
 							<article>
-								<?php _e( 'Posted on', 'journalism' );
-								/*Link to the archive page*/
-								$archive_year  = get_the_date( 'Y' );
-								$archive_month = get_the_date( 'm' ); ?>
-								<a href="<?php echo esc_url( get_month_link( $archive_year, $archive_month ) ); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php echo get_the_date(); ?></a>
-								<?php _e( 'in', 'journalism' ); ?>&nbsp<?php the_category( ', ' ); ?>
+								<?php _e( 'Posted on', 'journalism' ); ?>
+								<a href="<?php echo esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+								<?php if ( has_category() ) {
+									echo __( 'in', 'journalism' ) . '&nbsp';
+									the_category( ', ' );
+								} ?>
 							</article>
 						</div><!-- div .post-data -->
 					</header>
 					<div class="post-text">
-						<?php the_content( 'ALL TEXT' ); ?>
+						<?php the_content(); ?>
 					</div><!-- div .post-text -->
 					<?php wp_link_pages(); ?>
 					<footer>
@@ -42,10 +42,12 @@ get_header(); ?>
 						<span class="nav-previous"><?php previous_post_link( '%link' ); ?></span><!-- tags .previous -->
 						<span class="nav-next"><?php next_post_link( '%link' ); ?></span><!-- tags .next -->
 						<div class="clear"></div>
-						<div class="post-tag">
-							<?php the_tags( '&nbsp' ); ?>
-						</div><!-- div .post-tag -->
-						<?php edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php if ( has_tag() ) { ?>
+							<div class="post-tag"><!-- div .post-tag -->
+								<?php the_tags( '&nbsp;' ); ?>
+							</div><!-- div .post-tag -->
+						<?php }
+						edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
 						<div class="clear"></div>
 						<hr />
 						<?php if ( comments_open() || '0' != get_comments_number() ) :

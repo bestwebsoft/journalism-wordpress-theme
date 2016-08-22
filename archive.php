@@ -10,21 +10,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : $i = 0; ?>
 			<div class="journalism-title"><!-- div .journalism-title archive -->
 				<h1>
-					<?php if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'journalism' ), '<span>' . get_the_date() . '</span>' );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'journalism' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'journalism' ) ) . '</span>' );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'journalism' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'journalism' ) ) . '</span>' );
-					elseif ( is_tag() ) :
-						printf( __( 'Tag Archives: %s', 'journalism' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					elseif ( is_category() ) :
-						printf( __( 'Category Archives: %s', 'journalism' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					elseif ( is_author() ) :
-						printf( __( 'Author&#8217;s Archive: %s', 'journalism' ), '<span>' . esc_attr( get_the_author() ) . '</span>' );
-					else :
-						_e( 'Archives', 'journalism' );
-					endif; ?>
+					<?php the_archive_title(); ?>
 				</h1>
 			</div><!-- div .journalism-title archive -->
 			<?php do_action( 'journalism_wp_link_pages' ); /* post navigation */
@@ -49,12 +35,12 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 							</h2><!-- tags .entry-title -->
 							<div class="post-data"><!-- div .post-data -->
-								<article><?php _e( 'Posted on', 'journalism' );
-									/*Link to the archive page*/
-									$archive_year  = get_the_date( 'Y' );
-									$archive_month = get_the_date( 'm' ); ?>
-									<a href="<?php echo esc_url( get_month_link( $archive_year, $archive_month ) ); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php echo get_the_date(); ?></a>
-									<?php _e( 'in', 'journalism' ); ?>&nbsp<?php the_category( ', ' ); ?>
+								<article><?php _e( 'Posted on', 'journalism' ); ?>
+									<a href="<?php echo esc_url( get_the_permalink() ); ?>" title="<?php the_title_attribute(); ?>"><?php echo get_the_date(); ?></a>
+									<?php if ( has_category() ) {
+										echo __( 'in', 'journalism' ) . '&nbsp';
+										the_category( ', ' );
+									} ?>
 								</article>
 							</div><!-- div .post-data -->
 						</header>
@@ -64,13 +50,15 @@ get_header(); ?>
 						<?php wp_link_pages(); ?>
 						<hr />
 						<footer>
-							<div class="post-tag"><!-- div .post-tag -->
-								<?php the_tags( '&nbsp;' ); ?>
-							</div><!-- div .post-tag -->
-							<?php if ( $i >= 2 ) : ?>
+							<?php if ( has_tag() ) { ?>
+								<div class="post-tag"><!-- div .post-tag -->
+									<?php the_tags( '&nbsp;' ); ?>
+								</div><!-- div .post-tag -->
+							<?php }
+							if ( $i >= 2 ) : ?>
 								<a class='journalism-top' href="javascript:scroll(0,0);"><?php _e( '[Top]', 'journalism' ); ?></a>
-							<?php endif ?>
-							<?php edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
+							<?php endif;
+							edit_post_link( __( 'Edit', 'journalism' ), '<span class="edit-link">', '</span>' ); ?>
 						</footer>
 					</div><!-- div .journalism-post-carcas -->
 				</div><!-- div .post -->

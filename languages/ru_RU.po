@@ -1,19 +1,23 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: journalism\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-07 17:47+0300\n"
+"Project-Id-Version: Journalism v1.2\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-22 16:18+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: bestwebsoft.com <info@bestwebsoft.com>\n"
-"Language-Team: \n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : "
-"((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -30,81 +34,44 @@ msgstr ""
 "Кажется, мы не можем найти то, что вы ищете. Возможно поиск по сайту или "
 "одна из ссылок смогут помочь."
 
-#: 404.php:22 search.php:74
+#: 404.php:22 search.php:76
 msgid "Most Used Categories"
 msgstr "Часто используемые категории"
 
-#: archive.php:14
-#, php-format
-msgid "Daily Archives: %s"
-msgstr "Архив за день: %s"
-
-#: archive.php:16
-#, php-format
-msgid "Monthly Archives: %s"
-msgstr "Архив за месяц:%s"
-
-#: archive.php:18
-#, php-format
-msgid "Yearly Archives: %s"
-msgstr "Архив за год: %s"
-
-#: archive.php:20
-#, php-format
-msgid "Tag Archives: %s"
-msgstr "Архив метки: %s"
-
-#: archive.php:22 category.php:13
-#, php-format
-msgid "Category Archives: %s"
-msgstr "Архив Категории: %s"
-
-#: archive.php:24
-#, php-format
-msgid "Author&#8217;s Archive: %s"
-msgstr "Архив автора: %s"
-
-#: archive.php:26 sidebar.php:43
-msgid "Archives"
-msgstr "Архивы"
-
-#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
+#: archive.php:32 index.php:27 search.php:25
 msgid "Leave a reply"
 msgstr "Написать комментарий"
 
-#: archive.php:46 category.php:32 index.php:25 index.php:68 search.php:25
+#: archive.php:32 index.php:27 search.php:25
 msgid "1 Reply"
 msgstr "1 Комментарий"
 
-#: archive.php:46 category.php:32 index.php:25 search.php:25
+#: archive.php:32 search.php:25
 msgid "% Replies"
-msgstr "% Коментариев"
+msgstr "% Комментариев"
 
-#: archive.php:52 category.php:39 image.php:19 index.php:32 index.php:75
-#: search.php:32 single.php:27
+#: archive.php:38 image.php:19 index.php:34 search.php:32 single.php:27
 msgid "Posted on"
 msgstr "Опубликовано"
 
-#: archive.php:57 category.php:43 image.php:19 index.php:37 index.php:79
-#: search.php:37 single.php:32
+#: archive.php:41 image.php:19 index.php:37 search.php:35 single.php:30
 msgid "in"
-msgstr "в "
+msgstr "в"
 
-#: archive.php:71 category.php:57 index.php:93 search.php:52
+#: archive.php:59 index.php:55 search.php:53
 msgid "[Top]"
 msgstr "[Вверх]"
 
-#: archive.php:73 category.php:59 functions.php:259 functions.php:294
-#: image.php:82 index.php:49 index.php:95 page.php:31 search.php:50
-#: single.php:48
+#: archive.php:61 functions.php:222 functions.php:257 image.php:82
+#: index.php:57 page.php:32 search.php:55 single.php:50
 msgid "Edit"
 msgstr "Редактировать"
 
-#: archive.php:80 category.php:66 search.php:68
+#: archive.php:68 search.php:70
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: archive.php:83 category.php:68
+#: archive.php:71
 msgid ""
 "Apologies, but no results were found for the requested archive. Perhaps "
 "searching will help find a related post."
@@ -117,6 +84,14 @@ msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
 "Это сообщение защищено паролем. Введите пароль для просмотра комментариев."
+
+#: comments.php:16
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий к &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария к &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментариев к &ldquo;%2$s&rdquo;"
 
 #: comments.php:20 comments.php:30
 msgid "&larr; Older Comments"
@@ -151,63 +126,67 @@ msgid "Primary Navigation"
 msgstr "Меню навигации"
 
 #: functions.php:78
-#, php-format
-msgid "Page %s"
-msgstr "Страница:%s"
+msgid "Choose file..."
+msgstr "Выберите файл..."
 
-#: functions.php:117
-msgid "Enter search keyword"
-msgstr "Введите слово"
+#: functions.php:79
+msgid "File is not selected."
+msgstr "Файл не выбран."
 
-#: functions.php:139
+#: functions.php:80
+msgid "File Selected"
+msgstr "Файл выбран"
+
+#: functions.php:102
 msgid "Older posts"
-msgstr "Предыдущая страница"
+msgstr "Предыдущие записи"
 
-#: functions.php:140
+#: functions.php:103
 msgid "Newer posts"
-msgstr "Следующая страница"
+msgstr "Следующие записи"
 
-#: functions.php:192
+#: functions.php:155
 msgid "If you want to add this post in slider, choose the checkbox &nbsp "
 msgstr ""
-"Если вы хотите добавить этот пост в слайдер, установите галочку в чекбокс"
+"Если вы хотите добавить этот пост в слайдер, установите галочку в чекбокс "
+"&nbsp "
 
-#: functions.php:257
+#: functions.php:220
 msgid "Pingback:"
 msgstr "Уведомление:"
 
-#: functions.php:273
-msgid "on "
-msgstr "в "
+#: functions.php:236
+msgid "on"
+msgstr " "
 
-#: functions.php:273
+#: functions.php:236
 msgid "said:"
 msgstr "написал:"
 
-#: functions.php:279
+#: functions.php:242
 #, php-format
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
-#: functions.php:284
+#: functions.php:247
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает модерации."
 
-#: functions.php:297
+#: functions.php:260
 msgid "Reply"
 msgstr "Ответить"
 
-#: header.php:52
+#: header.php:51
 msgid "You have JavaScript disabled..."
 msgstr "У Вас отключён  JavaScript..."
 
 #: image.php:27
 msgid "See in full size: "
-msgstr "Посмотреть полноразмерное  изображение:"
+msgstr "Посмотреть полноразмерное  изображение: "
 
 #: image.php:28
 msgid "full size of "
-msgstr "Полноразмерное  изображение "
+msgstr "полноразмерное  изображение "
 
 #: image.php:30
 msgid "px"
@@ -219,18 +198,25 @@ msgstr "Следующее изображение &rarr;"
 
 #: image.php:33
 msgid "&larr; Previous image"
-msgstr "&larr; Предыдущее изображение."
+msgstr "&larr; Предыдущее изображение"
 
 #: image.php:73
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: search.php:13 search.php:63
+#: index.php:27
+msgid "% Reply"
+msgid_plural "% Replies"
+msgstr[0] "% Комментарий"
+msgstr[1] "% Комментария"
+msgstr[2] "% Комментариев"
+
+#: search.php:13 search.php:65
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Результаты поиска для: %s"
 
-#: search.php:69
+#: search.php:71
 msgid ""
 "Sorry, but nothing matched your search criteria. Please try again with some "
 "different keywords."
@@ -238,41 +224,51 @@ msgstr ""
 "Жаль, но ничто не соответствует критериям  Вашего поиска. Пожалуйста, "
 "попробуйте еще раз с другими ключевыми словами."
 
-#: sidebar.php:17
-msgid "Recent Posts"
-msgstr "Свежие записи"
+#: searchform.php:11
+msgid "Enter search keyword"
+msgstr "Введите поисковый запрос"
 
-#: sidebar.php:28
-msgid "Look"
-msgstr "Смотреть"
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Архив за день: %s"
 
-#: sidebar.php:34
-msgid "Recent Comments"
-msgstr "Свежие комментарии"
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Архив за месяц:%s"
 
-#: sidebar.php:49
-msgid "Catigories"
-msgstr "Категории"
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Архив за год: %s"
 
-#~ msgid "% Reply"
-#~ msgid_plural "% Replies"
-#~ msgstr[0] "1 Комментарий"
-#~ msgstr[1] "% Комментария"
-#~ msgstr[2] "% Комментариев"
-#~ msgstr[3] "% Комментарий"
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Архив метки: %s"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Архив Категории: %s"
+
+#~ msgid "Author&#8217;s Archive: %s"
+#~ msgstr "Архив автора: %s"
+
+#~ msgid "Archives"
+#~ msgstr "Архивы"
+
+#~ msgid "Page %s"
+#~ msgstr "Страница:%s"
+
+#~ msgid "Recent Posts"
+#~ msgstr "Свежие записи"
+
+#~ msgid "Look"
+#~ msgstr "Смотреть"
+
+#~ msgid "Recent Comments"
+#~ msgstr "Свежие комментарии"
+
+#~ msgid "Catigories"
+#~ msgstr "Категории"
 
 #~ msgid "F Y"
 #~ msgstr "F Y"
 
 #~ msgid "Y"
 #~ msgstr "Y"
-
-#~ msgid "One thought on &ldquo;%2$s&rdquo;"
-#~ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-#~ msgstr[0] "Один коментарий к &ldquo;%2$s&rdquo;"
-#~ msgstr[1] "%1$s коментария к &ldquo;%2$s&rdquo;"
-#~ msgstr[2] "%1$s коментариев к &ldquo;%2$s&rdquo;"
-#~ msgstr[3] "%1$s коментарий к &ldquo;%2$s&rdquo;"
 
 #~ msgid "You have not uploaded the featured image."
 #~ msgstr "У Вас не загружены миниатюры слайдера"
