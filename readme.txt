@@ -95,6 +95,9 @@ You can use our contact form for any support questions: http://bestwebsoft.com/c
 
 == Changelog ==
 
+= V1.3 - 27.09.2016 =
+* Update: All functionality for WordPress 4.6.1 was updated.
+
 = V1.2 - 22.08.2016 =
 * Update : All functionality for WordPress 4.6 was updated.
 
@@ -140,6 +143,9 @@ Changes to style.css to style tag cloud widget and to correct display of very lo
 Displaying of the comment form was fixed.
 
 == Upgrade Notice ==
+
+= V1.3 =
+All functionality for WordPress 4.6.1 was updated.
 
 = V1.2 =
 * The compatibility with new WordPress version updated.
